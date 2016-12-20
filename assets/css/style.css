@@ -61,6 +61,25 @@ a:hover {
 	width: 200px;
 }
 
+#sidebar .heading {
+	margin-bottom: 40px;
+}
+
+#sidebar .heading h2 {
+	font-family: 'Titillium Web', 'PT Sans', Sans-Serif, Arial;
+	font-size: 18px;
+	border: 0;
+}
+
+#sidebar .heading h2 a {
+	border: 0;
+}
+
+#sidebar .heading p {
+	font-family: 'PT Sans', Sans-Serif, Arial;
+	font-size: 13px;
+}
+
 #sidebar .widget {
 	font-family: 'PT Sans', Sans-Serif, Arial;
 	font-size: 14px;
@@ -92,6 +111,7 @@ a:hover {
 #sidebar .widget input {
 	width: 100%;
 	height: 40px;
+	line-height: 40px;
 	background: #eee;
 	border: 0;
 	border-bottom: 1px solid #ddd;
@@ -103,8 +123,8 @@ a:hover {
 #sidebar .widget input[type="submit"] {
 	width: auto;
 	color: #fff;
-	background: #272727;
-	border-bottom: 1px solid #111;
+	background: #111;
+	border: 0;
 	cursor: pointer;
 }
 
