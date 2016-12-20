@@ -5,3 +5,5 @@
 <?php wp_head(); ?>
 </head>
 <body <?php body_class(); ?>>
+
+	<div class="header-image"></div>

@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|PT+Sans:400,400i,700,700i&subset=cyrillic,cyrillic-ext,latin-ext');
+
 /* Overall */
 body {
-	font-family: Arial, Sans-Serif;
-	font-size: 14px;
-	background: #eee;
+	font-family: 'PT Sans', Arial, Sans-Serif;
+	font-size: 15px;
+	color: #555;
+	line-height: 1.75;
+	background: #555;
+	overflow-x: hidden;
 }
 
 .clear {
@@ -17,9 +22,21 @@ body {
 	float: right;
 }
 
+.header-image {
+	width: 300%;
+	height: 5000px;
+	background: url(http://sidelines-theme.dev/wp-content/uploads/2016/12/dwxiqsemagk-alex-blajan.jpg) no-repeat;
+	background-size: cover;
+	transform: rotate(-10deg);
+	opacity: .25;
+	position: absolute;
+	top: -5100px;
+	left: -500px;
+}
+
 /* Page */
 #page {
-	width: 1000px;
+	width: 860px;
 	margin-top: 40px;
 	margin-left: auto;
 	margin-right: auto;
@@ -27,19 +44,16 @@ body {
 }
 
 #sidebar {
-	width: 250px;
+	width: 200px;
 }
 
 #sidebar .widget {
-	background: #fff;
-	box-shadow: 0px 1px 3px rgba(23,23,23,.05);
-	padding: 20px;
-	margin-bottom: 20px;
+	margin-bottom: 40px;
 }
 
 #sidebar .widgettitle {
 	line-height: 1;
-	font-size: 10px;
+	font-size: 11px;
 	font-weight: 400;
 	text-transform: uppercase;
 	color: #999;
@@ -52,12 +66,13 @@ body {
 }
 
 #content {
-	width: calc(100% - 290px);
+	width: calc(100% - 240px);
 }
 
 #content .post {
 	background: #fff;
 	box-shadow: 0px 1px 3px rgba(23,23,23,.05);
+	overflow: hidden;
 	padding: 20px;
 	margin-bottom: 40px;
 }
@@ -74,4 +89,51 @@ body {
 #content .post-thumbnail img {
 	width: 100%;
 	height: auto;
+}
+
+#content .post-title {
+	display: inline-block;
+	font-family: 'Montserrat', 'PT Sans', Sans-Serif, Arial;
+	font-size: 17px;
+	font-weight: 400;
+	line-height: 1.5;
+	text-transform: uppercase;
+	margin-top: -10px;
+}
+
+#content .post-title a {
+	color: #111;
+	text-decoration: none;
+}
+
+#content .post-title:after {
+	display: block;
+	content: '';
+	width: 50px;
+	height: 2px;
+	background: #ddd;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#content .post-content {
+	font-size: 15px;
+	text-align: justify;
+}
+
+#content .post-content p {
+	margin-bottom: 20px;
+}
+
+#content .post-meta {
+	width: calc(100% + 40px);
+	height: 50px;
+	line-height: 50px;
+	background: #fbfbfb;
+	border-top: 1px solid #ddd;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-top: 20px;
+	margin-left: -20px;
+	margin-bottom: -20px;
 }
