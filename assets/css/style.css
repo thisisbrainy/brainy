@@ -1,13 +1,27 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700|PT+Sans:400,400i,700,700i&subset=cyrillic,cyrillic-ext,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Montserrat:400,700|PT+Sans:400,400i,700,700i|Titillium+Web:300,400,600&subset=cyrillic,cyrillic-ext,latin-ext');
 
 /* Overall */
 body {
-	font-family: 'PT Sans', Arial, Sans-Serif;
+	font-family: 'Lora', Arial, Sans-Serif;
 	font-size: 15px;
 	color: #555;
 	line-height: 1.75;
-	background: #555;
+	background: #fff;
 	overflow-x: hidden;
+}
+
+a {
+	color: #111;
+	text-decoration: none;
+	border-bottom: 1px solid #ddd;
+}
+
+a:hover {
+	border-bottom: 1px solid #111;
+}
+
+.screen-reader-text {
+	display: none;
 }
 
 .clear {
@@ -28,7 +42,7 @@ body {
 	background: url(http://sidelines-theme.dev/wp-content/uploads/2016/12/dwxiqsemagk-alex-blajan.jpg) no-repeat;
 	background-size: cover;
 	transform: rotate(-10deg);
-	opacity: .25;
+	opacity: .15;
 	position: absolute;
 	top: -5100px;
 	left: -500px;
@@ -36,7 +50,7 @@ body {
 
 /* Page */
 #page {
-	width: 860px;
+	width: 920px;
 	margin-top: 40px;
 	margin-left: auto;
 	margin-right: auto;
@@ -48,11 +62,14 @@ body {
 }
 
 #sidebar .widget {
+	font-family: 'PT Sans', Sans-Serif, Arial;
+	font-size: 14px;
 	margin-bottom: 40px;
 }
 
 #sidebar .widgettitle {
 	line-height: 1;
+	font-family: 'PT Sans', Sans-Serif, Arial;
 	font-size: 11px;
 	font-weight: 400;
 	text-transform: uppercase;
@@ -61,8 +78,34 @@ body {
 	margin-bottom: 10px;
 }
 
-#sidebar {
+#sidebar .widget li {
+	margin-bottom: 10px;
+}
 
+#sidebar .widget li:last-child {
+	border-left: 2px solid #ddd;
+	padding-left: 10px;
+	margin-left: -12px;
+	margin-bottom: 0;
+}
+
+#sidebar .widget input {
+	width: 100%;
+	height: 40px;
+	background: #eee;
+	border: 0;
+	border-bottom: 1px solid #ddd;
+	padding-left: 20px;
+	padding-right: 20px;
+	margin-bottom: 10px;
+}
+
+#sidebar .widget input[type="submit"] {
+	width: auto;
+	color: #fff;
+	background: #272727;
+	border-bottom: 1px solid #111;
+	cursor: pointer;
 }
 
 #content {
@@ -70,20 +113,14 @@ body {
 }
 
 #content .post {
-	background: #fff;
-	box-shadow: 0px 1px 3px rgba(23,23,23,.05);
-	overflow: hidden;
-	padding: 20px;
 	margin-bottom: 40px;
 }
 
 #content .post-thumbnail {
-	width: calc(100% + 40px);
-	height: auto;
+	width: 100%;
+	height: 200px;
 	overflow: hidden;
-	margin-top: -20px;
-	margin-left: -20px;
-	margin-bottom: 20px;
+	margin-bottom: 27px;
 }
 
 #content .post-thumbnail img {
@@ -93,31 +130,23 @@ body {
 
 #content .post-title {
 	display: inline-block;
-	font-family: 'Montserrat', 'PT Sans', Sans-Serif, Arial;
-	font-size: 17px;
-	font-weight: 400;
-	line-height: 1.5;
-	text-transform: uppercase;
-	margin-top: -10px;
+	width: 80%;
+	font-family: 'Titillium Web', 'PT Sans', Sans-Serif, Arial;
+	font-size: 25px;
+	font-weight: 300;
+	line-height: 1.2;
+	margin-top: -5px;
+	margin-bottom: 20px;
 }
 
 #content .post-title a {
 	color: #111;
 	text-decoration: none;
-}
-
-#content .post-title:after {
-	display: block;
-	content: '';
-	width: 50px;
-	height: 2px;
-	background: #ddd;
-	margin-top: 20px;
-	margin-bottom: 20px;
+	border: 0;
 }
 
 #content .post-content {
-	font-size: 15px;
+	font-size: 16px;
 	text-align: justify;
 }
 
@@ -126,14 +155,16 @@ body {
 }
 
 #content .post-meta {
-	width: calc(100% + 40px);
-	height: 50px;
-	line-height: 50px;
-	background: #fbfbfb;
-	border-top: 1px solid #ddd;
-	padding-left: 20px;
-	padding-right: 20px;
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	font-family: 'PT Sans';
+	font-size: 12px;
+	font-weight: bold;
+	opacity: .45;
 	margin-top: 20px;
-	margin-left: -20px;
-	margin-bottom: -20px;
+}
+
+#content .post-meta:hover {
+	opacity: .75;
 }
