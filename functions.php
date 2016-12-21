@@ -11,3 +11,6 @@ require_once __DIR__ . '/includes/functions.php';
 sidelines_asset('css', 'font-awesome.css');
 sidelines_asset('css', 'reset.css');
 sidelines_asset('css', 'style.css');
+sidelines_asset('js', 'jquery.js');
+sidelines_asset('js', 'hyphenator.js');
+sidelines_asset('js', 'sidelines.js');

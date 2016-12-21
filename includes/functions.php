@@ -81,7 +81,7 @@ function sidelines_posted_on() {
 	$tags = get_the_tags();
 	$categories = get_the_category();
 
-	echo '<span class="post-meta-date"><i class="fa fa-calendar"></i> ' . get_the_time('d.m.Y') . '</span><br>';
+	echo '<span class="post-meta-date"><i class="fa fa-calendar"></i> ' . get_the_time('F jS, Y') . '</span><br>';
 	echo '<span class="post-meta-by"><i class="fa fa-pencil"></i> ' . get_the_author_link() . '</span><br>';
 	echo '<span class="post-meta-tags"><i class="fa fa-tags"></i> ';
 
@@ -124,6 +124,5 @@ function sidelines_posted_on() {
 
 	echo '</span><br>';
 	echo '<i class="fa fa-comments"></i> <a href="' . get_the_permalink() . '">' . get_comments_number() . ' ' . __('comments') . '</a><br>';
-	echo '<i class="fa fa-commenting"></i> <a href="' . get_the_permalink() . '">' . __('Leave a comment') . '</a>';
 
 }
