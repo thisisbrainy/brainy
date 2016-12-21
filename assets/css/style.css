@@ -162,7 +162,7 @@ a:hover {
 	width: 80%;
 	font-family: 'Titillium Web', 'PT Sans', Sans-Serif, Arial;
 	font-size: 25px;
-	font-weight: 300;
+	font-weight: 800;
 	line-height: 1.2;
 	margin-top: -5px;
 	margin-bottom: 20px;
@@ -185,7 +185,7 @@ a:hover {
 
 #content .post-meta {
 	width: 100%;
-	line-height: 1.5;
+	line-height: 1.75;
 	font-family: 'PT Sans';
 	font-size: 12px;
 	font-weight: bold;

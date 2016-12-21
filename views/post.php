@@ -14,9 +14,7 @@
 
 	<div class="post-meta">
 
-		<?php sidelines_posted_on(); ?><div class="clear"></div>
-		<i class="fa fa-tags"></i> <?php the_tags( '', ', ', '<br />' ); ?><div class="clear"></div>
-		<i class="fa fa-tags"></i> <?php the_category(', '); ?>
+		<?php sidelines_posted_on(); ?>
 
 	</div>
 
