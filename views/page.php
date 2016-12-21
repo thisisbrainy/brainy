@@ -12,10 +12,4 @@
 
 	<div class="post-content"><?php the_content(); ?></div>
 
-	<div class="post-meta">
-
-		<?php sidelines_post_meta(); ?>
-
-	</div>
-
 </article>

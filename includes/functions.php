@@ -76,7 +76,7 @@ function sidelines_asset($type, $filename, $cache = false) {
 
 }
 
-function sidelines_posted_on() {
+function sidelines_post_meta() {
 
 	$tags = get_the_tags();
 	$categories = get_the_category();
