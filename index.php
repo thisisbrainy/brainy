@@ -2,11 +2,11 @@
 
 <div id="page">
 
-	<div id="sidebar" class="left">
+	<div id="sidebar" class="right">
 		<?php get_sidebar(); ?>
 	</div>
 
-	<div id="content" class="right">
+	<div id="content" class="left">
 		<?php sidelines_content(); ?>
 	</div>
 

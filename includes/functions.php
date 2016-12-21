@@ -83,46 +83,57 @@ function sidelines_post_meta() {
 
 	echo '<span class="post-meta-date"><i class="fa fa-calendar"></i> ' . get_the_time('F jS, Y') . '</span><br>';
 	echo '<span class="post-meta-by"><i class="fa fa-pencil"></i> ' . get_the_author_link() . '</span><br>';
-	echo '<span class="post-meta-tags"><i class="fa fa-tags"></i> ';
 
-	$t_i = 0;
-	$t_len = count($tags);
+	if(!empty($tags)) {
 
-	foreach($tags as $tag) {
+		echo '<span class="post-meta-tags"><i class="fa fa-tags"></i> ';
 
-		echo '<a href="' . get_tag_link($tag->term_id) . '">' . $tag->name . '</a>';
+		$t_i = 0;
+		$t_len = count($tags);
 
-		if($t_len !== 1 && $t_i !== $t_len - 1) {
+		foreach($tags as $tag) {
 
-			echo ', ';
+			echo '<a href="' . get_tag_link($tag->term_id) . '">' . $tag->name . '</a>';
 
-		}
+			if($t_len !== 1 && $t_i !== $t_len - 1) {
 
-		$t_i++;
+				echo ', ';
 
-	}
+			}
 
-	echo '</span><br>';
-	echo '<span class="post-meta-categories"><i class="fa fa-tags"></i> ';
-
-	$c_i = 0;
-	$c_len = count($categories);
-
-	foreach($categories as $category) {
-
-		echo '<a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a>';
-
-		if($c_len !== 1 && $c_i !== $c_len - 1) {
-
-			echo ', ';
+			$t_i++;
 
 		}
 
-		$c_i++;
+		echo '</span><br>';
 
 	}
 
-	echo '</span><br>';
+	if(!empty($categories)) {
+
+		echo '<span class="post-meta-categories"><i class="fa fa-tags"></i> ';
+
+		$c_i = 0;
+		$c_len = count($categories);
+
+		foreach($categories as $category) {
+
+			echo '<a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a>';
+
+			if($c_len !== 1 && $c_i !== $c_len - 1) {
+
+				echo ', ';
+
+			}
+
+			$c_i++;
+
+		}
+
+		echo '</span><br>';
+
+	}
+	
 	echo '<i class="fa fa-comments"></i> <a href="' . get_the_permalink() . '">' . get_comments_number() . ' ' . __('comments') . '</a><br>';
 
 }

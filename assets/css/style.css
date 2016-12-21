@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Montserrat:400,700|PT+Sans:400,400i,700,700i|Titillium+Web:300,400,600&subset=cyrillic,cyrillic-ext,latin-ext');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i');
 
 /* Overall */
 body {
@@ -62,7 +63,7 @@ a:hover {
 }
 
 #sidebar {
-	width: 200px;
+	width: 220px;
 }
 
 #sidebar .heading {
@@ -70,7 +71,7 @@ a:hover {
 }
 
 #sidebar .heading h2 {
-	font-family: 'Titillium Web', 'PT Sans', Sans-Serif, Arial;
+	font-family: 'Source Sans Pro', 'Source Sans Pro', Sans-Serif, Arial;
 	font-size: 18px;
 	border: 0;
 	margin-top: -5px;
@@ -81,19 +82,19 @@ a:hover {
 }
 
 #sidebar .heading p {
-	font-family: 'PT Sans', Sans-Serif, Arial;
+	font-family: 'Source Sans Pro', Sans-Serif, Arial;
 	font-size: 13px;
 }
 
 #sidebar .widget {
-	font-family: 'PT Sans', Sans-Serif, Arial;
+	font-family: 'Source Sans Pro', Sans-Serif, Arial;
 	font-size: 14px;
 	margin-bottom: 40px;
 }
 
 #sidebar .widgettitle {
 	line-height: 1;
-	font-family: 'PT Sans', Sans-Serif, Arial;
+	font-family: 'Source Sans Pro', Sans-Serif, Arial;
 	font-size: 11px;
 	font-weight: 400;
 	text-transform: uppercase;
@@ -107,30 +108,28 @@ a:hover {
 }
 
 #sidebar .widget li {
-	border-left: 2px solid #ddd;
-	padding-left: 10px;
-	margin-left: -12px;
-	margin-bottom: 5px;
+	margin-bottom: 10px;
 }
 
-#sidebar .widget.widget_nav_menu li {
+#sidebar .widget li {
 	border-left: 0;
 	padding-left: 0;
 	margin-left: 0;
 }
 
-#sidebar .widget.widget_nav_menu li a {
+#sidebar .widget li a {
 	display: inline-block;
-	font-size: 13px;
-	color: #fff;
-	background: #111;
+	font-size: 12px;
+	color: #444;
+	text-transform: uppercase;
+	background: #eee;
 	border: 0;
-	padding: 3px 10px 3px 10px;
+	padding: 4px 10px 4px 10px;
 }
 
-#sidebar .widget.widget_nav_menu li a:hover {
-	color: #111;
-	background: #eee;
+#sidebar .widget a:hover {
+	color: #fff;
+	background: #111;
 }
 
 #sidebar .widget input {
@@ -155,7 +154,7 @@ a:hover {
 }
 
 #content {
-	width: calc(100% - 240px);
+	width: calc(100% - 280px);
 }
 
 #content .post {
@@ -181,10 +180,11 @@ a:hover {
 #content .post-title {
 	display: inline-block;
 	width: 80%;
-	font-family: 'Titillium Web', 'PT Sans', Sans-Serif, Arial;
-	font-size: 23px;
+	font-family: 'Source Sans Pro', Sans-Serif, Arial;
+	font-size: 22px;
 	font-weight: 800;
 	line-height: 1.2;
+	text-transform: uppercase;
 	margin-top: -5px;
 	margin-bottom: 20px;
 }
@@ -196,7 +196,7 @@ a:hover {
 }
 
 #content .post-content {
-	font-size: 16px;
+	font-size: 15px;
 	text-align: justify;
 }
 
@@ -205,6 +205,7 @@ a:hover {
 }
 
 #content .post-content blockquote {
+	color: #777;
 	border-left: 2px solid #ddd;
 	padding-left: 20px;
 }
@@ -213,10 +214,121 @@ a:hover {
 	color: #777;
 }
 
+#content h1,
+#comments .comment-content h1,
+#content h2,
+#comments .comment-content h2,
+#content h3,
+#comments .comment-content h3,
+#content h4,
+#comments .comment-content h4,
+#content h5,
+#comments .comment-content h5 {
+	font-family: 'Source Sans Pro', Sans-Serif, Arial;
+	font-size: 20px;
+	color: #111;
+	margin-top: 40px;
+	margin-bottom: 20px;
+}
+
+#content h2,
+#comments .comment-content h2 {
+	font-size: 18px;
+}
+
+#content h3,
+#comments .comment-content h3 {
+	font-size: 16px;
+}
+
+#content h4,
+#comments .comment-content h4 {
+	font-size: 14px;
+	text-transform: uppercase;
+}
+
+#content h5,
+#comments .comment-content h5 {
+	font-size: 11px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #999;
+}
+
+#content pre,
+#comments .comment-content pre {
+	font-size: 12px;
+	background: #eee;
+	overflow: auto;
+	padding: 20px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#content code,
+#comments .comment-content code {
+	font-size: 12px;
+	background: #eee;
+}
+
+#content ul,
+#comments .comment-content ul {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#content ul li,
+#comments .comment-content ul li {
+	list-style: square;
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+
+#content ul li:last-child,
+#comments .comment-content ul li:last-child {
+	margin-bottom: 0;
+}
+
+#content ol,
+#comments .comment-content ol {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#content ol li,
+#comments .comment-content ol li {
+	list-style: decimal;
+	margin-left: 20px;
+	margin-bottom: 10px;
+}
+
+#content ol li:last-child,
+#comments .comment-content ol li:last-child {
+	margin-bottom: 0;
+}
+
+#content dl,
+#comments .comment-content dl {
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#content dt,
+#comments .comment-content dt {
+	color: #111;
+	font-weight: 800;
+	margin-top: 10px;
+}
+
+#content dd,
+#comments .comment-content dd {
+	font-weight: 400;
+}
+
 #content .post-meta {
 	width: 100%;
 	line-height: 1.75;
-	font-family: 'PT Sans';
+	font-family: 'Source Sans Pro';
 	font-size: 12px;
 	font-weight: bold;
 	opacity: .45;
@@ -238,14 +350,14 @@ a:hover {
 
 /* Comments */
 #comments {
-	font-family: 'PT Sans', Sans-Serif, Arial;
+	font-family: 'Source Sans Pro', Sans-Serif, Arial;
 	font-size: 14px;
 	margin-bottom: 40px;
 }
 
 #comments h3 {
 	width: 80%;
-	font-family: 'PT Sans', Sans-Serif, Arial;
+	font-family: 'Source Sans Pro', Sans-Serif, Arial;
 	font-size: 15px;
 	font-weight: 700;
 	color: #555;
@@ -259,9 +371,11 @@ a:hover {
 }
 
 #comments .commentlist li {
+	list-style: none;
 	background: #eee;
 	border-bottom: 2px solid #ddd;
 	padding: 20px;
+	margin: 0;
 	margin-top: 20px;
 }
 
@@ -318,7 +432,7 @@ a:hover {
 #comments .comment-form input,
 #comments .comment-form textarea {
 	display: block;
-	font-family: 'PT Sans', Sans-Serif, Arial;
+	font-family: 'Source Sans Pro', Sans-Serif, Arial;
 	font-size: 14px;
 	color: #555;
 	height: 40px;
