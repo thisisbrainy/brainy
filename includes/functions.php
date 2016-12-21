@@ -72,16 +72,9 @@ function sidelines_asset($type, $filename, $cache = false) {
 
 function sidelines_posted_on() {
 
-	$time_string = sprintf( $time_string,
-		get_the_date( DATE_W3C ),
-		get_the_date(),
-		get_the_modified_date( DATE_W3C ),
-		get_the_modified_date()
-	);
-
 	echo '<div class="left">';
-	echo '<span class="post-meta-date"><i class="fa fa-date"></i> ' . the_time('d.m.Y') . '</span>';
-	echo '<span class="post-meta-by"><i class="fa fa-user"></i> ' . the_author_link() . '</span>';
+	echo '<span class="post-meta-date"><i class="fa fa-calendar"></i> ' . get_the_time('d.m.Y') . '</span>';
+	echo '<span class="post-meta-by"><i class="fa fa-pencil"></i> ' . get_the_author_link() . '</span>';
 	echo '</div>';
 
 }
