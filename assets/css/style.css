@@ -210,14 +210,15 @@ a:hover {
 	height: auto;
 }
 
-#the-content .post-title {
-	display: inline-block;
+#the-content .post-title,
+#the-content h1.page-title {
+	display: block;
 	width: 80%;
 	font-family: 'Source Sans Pro', Sans-Serif, Arial;
 	font-size: 22px;
 	font-weight: 800;
 	line-height: 1.2;
-	margin-top: -5px;
+	margin-top: -5px !important;
 	margin-bottom: 20px;
 }
 
@@ -494,6 +495,53 @@ a:hover {
 	height: 100px;
 	border: 0;
 	overflow: hidden;
+}
+
+.woocommerce-result-count {
+	display: block;
+	font-family: 'Source Sans Pro', Sans-Serif, Arial;
+	font-size: 12px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.woocommerce .products .product {
+	width: calc(50% - 10px) !important;
+	font-family: 'Source Sans Pro', Sans-Serif, Arial;
+	text-align: center; !important;
+	list-style: none !important;
+	margin: 0 !important;
+	margin-right: 20px !important;
+	margin-bottom: 40px !important;
+}
+
+.woocommerce .products .product:nth-child(2n) {
+	margin-right: 0 !important;
+}
+
+.woocommerce .products .product h3 {
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #999 !important;
+	margin-top: 0 !important;
+	margin-bottom: 0 !important;
+}
+
+.woocommerce .products .product .amount {
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.woocommerce .products .product .button {
+	font-size: 12px;
+	font-weight: 600;
+	text-transform: uppercase;
+	background: #fff;
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	margin-top: 10px !important;
 }
 
 /* Comments */
