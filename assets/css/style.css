@@ -429,6 +429,52 @@ a:hover {
 	text-align: left;
 }
 
+#content strike,
+#content del {
+	opacity: .5;
+}
+
+#content iframe {
+	width: 100%;
+	height: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+
+#content .gallery-item {
+	display: inline-block;
+	width: calc(100% / 3 - 13.3333333333px);
+	height: 100px;
+	background: #eee;
+	overflow: hidden;
+	margin-right: 20px;
+	margin-bottom: 10px;
+}
+
+#content .gallery-item a {
+	border: 0;
+}
+
+#content .gallery-item img {
+	width: 100%;
+	height: auto;
+}
+
+#content .gallery-item:nth-child(3n) {
+	margin-right: 0;
+}
+
+@media all and (max-width: 600px) {
+
+	#content .gallery-item {
+		display: block;
+		width: 100%;
+		height: auto;
+		margin-right: 0;
+	}
+
+}
+
 #content .post-meta {
 	width: 100%;
 	line-height: 1.75;
