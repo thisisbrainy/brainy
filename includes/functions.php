@@ -14,7 +14,7 @@ function sidelines_content() {
 
 			}
 
-			if(is_single() || is_home()) {
+			if(is_single() || is_home() || is_search() || is_archive() || is_tag() || is_category()) {
 
 				require SIDELINES_DIR . '/views/post.php';
 
@@ -133,7 +133,7 @@ function sidelines_post_meta() {
 		echo '</span><br>';
 
 	}
-	
+
 	echo '<i class="fa fa-comments"></i> <a href="' . get_the_permalink() . '">' . get_comments_number() . ' ' . __('comments') . '</a><br>';
 
 }
