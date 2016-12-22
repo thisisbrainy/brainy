@@ -233,11 +233,11 @@ a:hover {
 	width: calc(100% - 280px);
 }
 
-#content .post {
+#content #post {
 	margin-bottom: 120px;
 }
 
-#content .post:last-child {
+#content #post:last-child {
 	margin-bottom: 40px;
 }
 
