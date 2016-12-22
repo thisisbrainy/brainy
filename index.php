@@ -1,12 +1,12 @@
 <?php get_header(); ?>
 
-<div id="page">
+<div id="the-page">
 
-	<div id="sidebar" class="right">
+	<div id="the-sidebar" class="right">
 		<?php get_sidebar(); ?>
 	</div>
 
-	<div id="content" class="left">
+	<div id="the-content" class="left">
 		<?php sidelines_content(); ?>
 	</div>
 
