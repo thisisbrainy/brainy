@@ -20,7 +20,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly
 }
 
-get_header( 'shop' ); ?>
+get_header(); ?>
+
+<div id="the-page">
+
+	<div id="the-sidebar" class="right">
+		<?php get_sidebar(); ?>
+	</div>
+
+	<div id="the-content" class="left">
+
 
 	<?php
 		/**
@@ -106,3 +115,6 @@ get_header( 'shop' ); ?>
 	?>
 
 <?php get_footer( 'shop' ); ?>
+
+</div>
+</div>

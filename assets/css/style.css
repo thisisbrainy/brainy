@@ -533,6 +533,8 @@ a:hover {
 }
 
 #comments .commentlist li .avatar {
+	width: 40px;
+	height: 40px;
 	border-radius: 100%;
 }
 
@@ -543,8 +545,8 @@ a:hover {
 
 #comments .comment-author .fn {
 	display: inline-block;
-	margin-left: 5px;
-	top: -11px;
+	margin-left: 10px;
+	top: -15px;
 }
 
 #comments .comment-author .says {
