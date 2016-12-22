@@ -177,6 +177,13 @@ a:hover {
 	padding: 4px 10px 4px 10px;
 }
 
+#sidebar .footer {
+	font-family: 'Source Sans Pro', Sans-Serif, Arial;
+	font-size: 13px;
+	color: #999;
+	margin-top: 40px;
+}
+
 #content {
 	width: calc(100% - 280px);
 }
