@@ -21,3 +21,22 @@ add_filter('xmlrpc_methods', function($methods) {
 	return $methods;
 
 });
+
+/* Remove parentheses from Archive Widget */
+add_filter('wp_list_categories', function($variable) {
+
+	$variable = str_replace('(', '<span class="post-count">', $variable);
+	$variable = str_replace(')', '</span>', $variable);
+
+	return $variable;
+
+});
+
+add_filter('get_archives_link', function($variable) {
+	
+	$variable = str_replace('(', '<span class="post-count">', $variable);
+	$variable = str_replace(')', '</span>', $variable);
+
+	return $variable;
+
+});
