@@ -137,6 +137,10 @@ a:hover {
 	background: #272727;
 }
 
+#sidebar .widget.widget_nav_menu .current-menu-item a {
+	background: #00BBEE;
+}
+
 #sidebar .widget input {
 	width: 100%;
 	height: 40px;
