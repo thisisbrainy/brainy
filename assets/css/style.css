@@ -7,7 +7,7 @@ body {
 	font-size: 15px;
 	color: #555;
 	line-height: 1.75;
-	background: #fff;
+	background: #fafafa;
 	overflow-x: hidden;
 }
 
@@ -41,6 +41,12 @@ a:hover {
 	float: right;
 }
 
+.wrap {
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 .header-image {
 	width: 300%;
 	height: 5000px;
@@ -53,16 +59,74 @@ a:hover {
 	left: -500px;
 }
 
+/* Header */
+#header {
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	background: #1995ee;
+	background: linear-gradient(#1995ee, #118ce5);
+	border-bottom: 1px solid #0d6fb6;
+	box-shadow: 0px 1px 10px rgba(0,0,0,.25);
+	z-index: 100000;
+	position: fixed;
+	top: 0;
+	left: 0;
+}
+
+#header .header-title {
+	font-family: 'Source Sans Pro', Sans-Serif, Arial;
+	font-size: 18px;
+	font-weight: 300;
+}
+
+#header .header-title a {
+	color: #fff;
+	text-shadow: 0px -1px 0px rgba(0,0,0,.2);
+	border: 0;
+}
+
+#header .header-menu {}
+#header .header-menu li {
+	float: left;
+	font-family: 'Source Sans Pro', Sans-Serif, Arial;
+	font-size: 11px;
+	text-transform: uppercase;
+	margin-left: 10px;
+}
+
+#header .header-menu li a {
+	font-weight: 600;
+	color: rgba(255,255,255,.8);
+	text-shadow: 0px -1px 0px rgba(0,0,0,.2);
+	text-decoration: none;
+	box-shadow: 0px 1px 0px rgba(255,255,255,.15);
+	border: 1px solid rgba(0,0,0,.2);
+	border-radius: 25px;
+	padding: 5px 10px 5px 10px;
+}
+
+#header .header-menu li a:hover {
+	color: #fff;
+	border: 1px solid rgba(0,0,0,.25);
+}
+
+#header .header-menu li.current-menu-item a {
+	color: #1995ee;
+	text-shadow: none;
+	background: #fff;
+	box-shadow: 0px 1px 5px rgba(0,0,0,.1);
+	border: 1px solid transparent;
+}
+
 /* Page */
 #the-page {
-	width: 920px;
-	margin-top: 40px;
-	margin-left: auto;
-	margin-right: auto;
+	margin-top: 80px;
 	margin-bottom: 40px;
 }
 
 #the-sidebar {
+	display: none;
 	width: 220px;
 	margin-bottom: 40px;
 }
@@ -186,11 +250,17 @@ a:hover {
 }
 
 #the-content {
-	width: calc(100% - 280px);
+	width: 100%;
 }
 
 #the-content #post {
+	padding-left: 150px;
+	padding-right: 150px;
 	margin-bottom: 120px;
+}
+
+body.woocommerce-page #the-content #post {
+	padding: 0;
 }
 
 #the-content #post:last-child {
@@ -198,16 +268,18 @@ a:hover {
 }
 
 #the-content .post-thumbnail {
-	width: 200%;
+	width: calc(100% + 300px);
 	height: auto;
+	border-radius: 2px;
 	overflow: hidden;
-	margin-left: -100%;
+	margin-left: -150px;
 	margin-bottom: 27px;
 }
 
 #the-content .post-thumbnail img {
 	width: 100%;
 	height: auto;
+	border-radius: 2px;
 }
 
 #the-content .post-title,
@@ -215,7 +287,7 @@ a:hover {
 	display: block;
 	width: 80%;
 	font-family: 'Source Sans Pro', Sans-Serif, Arial;
-	font-size: 22px;
+	font-size: 23px;
 	font-weight: 800;
 	line-height: 1.2;
 	margin-top: -5px !important;
@@ -363,6 +435,7 @@ a:hover {
 	width: 100%;
 	height: auto;
 	border: 0;
+	border-radius: 2px;
 }
 
 #the-content table {
@@ -402,6 +475,7 @@ a:hover {
 	width: calc(100% / 3 - 13.3333333333px);
 	height: 100px;
 	background: #eee;
+	border-radius: 2px;
 	overflow: hidden;
 	margin-right: 20px;
 	margin-bottom: 10px;
@@ -500,9 +574,14 @@ a:hover {
 .woocommerce-result-count {
 	display: block;
 	font-family: 'Source Sans Pro', Sans-Serif, Arial;
-	font-size: 12px;
+	font-size: 13px;
 	font-weight: 400;
-	text-transform: uppercase;
+	color: #777;
+	margin-top: -5px !important;
+}
+
+.woocommerce-ordering {
+	margin-top: -5px !important;
 }
 
 .woocommerce .products .product {
@@ -512,52 +591,66 @@ a:hover {
 	list-style: none !important;
 	margin: 0 !important;
 	margin-right: 20px !important;
-	margin-bottom: 40px !important;
+	margin-bottom: 80px !important;
 }
 
 .woocommerce .products .product:nth-child(2n) {
 	margin-right: 0 !important;
 }
 
+.woocommerce .products .product img {
+	border-radius: 2px;
+}
+
 .woocommerce .products .product h3 {
 	font-size: 14px;
-	font-weight: 400;
-	text-transform: uppercase;
-	color: #999 !important;
+	font-weight: 600;
+	color: #111 !important;
 	margin-top: 0 !important;
 	margin-bottom: 0 !important;
 }
 
 .woocommerce .products .product .amount {
+	display: block;
 	font-size: 14px;
 	font-weight: 400;
 	text-transform: uppercase;
+	margin-top: -10px;
 }
 
 .woocommerce .products .product .button {
-	font-size: 12px;
+	font-size: 11px;
 	font-weight: 600;
 	text-transform: uppercase;
-	background: #fff;
-	border: 1px solid #ddd;
-	border-radius: 2px;
+	color: #fff;
+	background: #1995ee;
+	background: linear-gradient(#1995ee, #118ce5);
+	border: 1px solid #0d6fb6;
+	border-radius: 25px;
 	margin-top: 10px !important;
+}
+
+.woocommerce .products .product a.added_to_cart {
+	padding-top: 0 !important;
+	margin-left: 20px !important;
 }
 
 /* Comments */
 #comments {
 	font-family: 'Source Sans Pro', Sans-Serif, Arial;
 	font-size: 14px;
+	padding-left: 150px;
+	padding-right: 150px;
 	margin-bottom: 40px;
 }
 
 #comments h3 {
-	width: 80%;
 	font-family: 'Source Sans Pro', Sans-Serif, Arial;
 	font-size: 15px;
 	font-weight: 700;
 	color: #555;
 	text-transform: uppercase;
+	padding: 0;
 	margin-top: 40px;
 	margin-bottom: 20px;
 }
@@ -568,8 +661,9 @@ a:hover {
 
 #comments .commentlist li {
 	list-style: none;
-	background: #eee;
-	border-bottom: 2px solid #ddd;
+	background: #fbfbfb;
+	border: 1px solid #ddd;
+	border-radius: 2px;
 	padding: 20px;
 	margin: 0;
 	margin-top: 20px;
@@ -577,7 +671,13 @@ a:hover {
 
 #comments .commentlist li li {
 	border: 0;
+	border-top: 1px solid #ddd;
 	padding: 0;
+	padding-top: 20px;
+}
+
+#comments .commentlist li li:last-child {
+	margin-bottom: -20px;
 }
 
 #comments .commentlist li .avatar {
@@ -608,9 +708,6 @@ a:hover {
 #comments .comment-content {
 	font-family: 'Lora', Sans-Serif, Arial;
 	font-size: 16px;
-	background: #fff;
-	border-bottom: 2px solid #ddd;
-	padding: 20px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }
@@ -636,7 +733,7 @@ a:hover {
 	height: 40px;
 	line-height: 40px;
 	border: 1px solid #ddd;
-	border-bottom: 2px solid #ddd;
+	border-radius: 2px;
 	outline: none;
 	padding: 15px;
 	margin-bottom: 20px;
@@ -660,10 +757,13 @@ a:hover {
 #comments .comment-form input[type="submit"] {
 	width: auto;
 	height: 40px;
-	line-height: 40px;
+	line-height: 38px;
+	font-size: 13px;
+	font-weight: 600;
 	color: #fff;
-	background: #111;
-	border: 0;
+	background: #1995ee;
+	background: linear-gradient(#1995ee, #118ce5);
+	border: 1px solid #0d6fb6;
 	cursor: pointer;
 	padding: 0;
 	padding-left: 15px;

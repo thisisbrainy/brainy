@@ -30,6 +30,15 @@ add_action('after_setup_theme', function() {
 
 });
 
+/* Register menus */
+add_action('init', function() {
+
+	register_nav_menus([
+		'primary' => __('Primary Menu')
+	]);
+
+});
+
 /* Register sidebar */
 add_action('widgets_init', function() {
 
