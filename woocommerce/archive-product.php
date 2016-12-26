@@ -24,7 +24,7 @@ get_header(); ?>
 
 <div id="the-page" class="wrap">
 
-	<div id="the-content">
+	<div id="the-content" class="left">
 
 
 	<?php
@@ -99,10 +99,17 @@ get_header(); ?>
 		 * @hooked woocommerce_output_content_wrapper_end - 10 (outputs closing divs for the content)
 		 */
 		do_action( 'woocommerce_after_main_content' );
+
 	?>
 
+</div>
 
-<?php get_footer( 'shop' ); ?>
+<div id="the-sidebar" class="right">
+
+	<?php get_sidebar('woo'); ?>
 
 </div>
+
 </div>
+
+<?php get_footer();

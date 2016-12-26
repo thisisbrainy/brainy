@@ -47,4 +47,9 @@ add_action('widgets_init', function() {
 		'id' => 'sidebar'
 	]);
 
+	register_sidebar([
+		'name' => __('Shop Sidebar', 'sidelines'),
+		'id' => 'woo-sidebar'
+	]);
+
 });
