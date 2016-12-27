@@ -10,6 +10,7 @@ add_filter('woocommerce_checkout_fields', function($fields) {
 	unset($fields['billing']['billing_address_2']);
 	unset($fields['billing']['billing_country']);
 	unset($fields['billing']['billing_phone']);
+	unset($fields['billing']['billing_company']);
 
 	return $fields;
 
