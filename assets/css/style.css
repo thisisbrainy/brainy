@@ -885,7 +885,7 @@ body.woocommerce-checkout article#post {
 	display: none;
 }
 
-.woocommerce form.checkout_coupon, .woocommerce form.login, .woocommerce form.register {
+.woocommerce form.checkout_scoupon, .woocommerce form.login, .woocommerce form.register {
 	width: calc(100% + 40px);
 	background: #fbfbfb !important;
 	border: 0 !important;
@@ -895,7 +895,8 @@ body.woocommerce-checkout article#post {
 	padding-bottom: 0 !important;
 	margin-top: 0 !important;
 	margin-left: -20px !important;
-	margin-bottom: -5px !important;
+	margin-bottom: -7px !important;
+	bottom: -5px;
 }
 
 .woocommerce form .form-row input.input-text, .woocommerce form .form-row textarea {
@@ -911,15 +912,16 @@ body.woocommerce-checkout article#post {
 	padding-right: 15px;
 }
 
-.woocommerce .checkout_coupon .button {
+.woocommerce .checkout_scoupon .button,
+.woocommerce-error .button {
 	font-size: 100%;
 	margin: 0;
-	line-height: 1;
+	line-height: 40px !important;
 	cursor: pointer;
 	position: relative;
 	text-decoration: none;
 	overflow: visible;
-	padding: .618em 1em;
+	padding: 0 !important;
 	font-weight: 700;
 	border-radius: 3px;
 	left: auto;
@@ -937,8 +939,16 @@ body.woocommerce-checkout article#post {
 	color: #fff !important;
 	font-size: 13px !important;
 	font-weight: 600;
-	border-radius: 2px;
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+	border-radius: 2px !important;
 	border: 0;
+}
+
+.woocommerce-error .button,
+.woocommerce-info .button,
+.woocommerce-message .button {
+	display: none !important;
 }
 
 /* Comments */
