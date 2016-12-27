@@ -137,3 +137,7 @@ function sidelines_post_meta() {
 	echo '<i class="fa fa-comments"></i> <a href="' . get_the_permalink() . '">' . get_comments_number() . ' ' . __('comments') . '</a><br>';
 
 }
+add_filter( 'woocommerce_widget_cart_is_hidden', 'always_show_cart', 40, 0 );
+function always_show_cart() {
+    return false;
+}
