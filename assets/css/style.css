@@ -352,6 +352,19 @@ body.woocommerce-page #the-content #post {
 	margin-bottom: 40px;
 }
 
+body.page-id-383 #post {
+	margin-bottom: 0 !important;
+}
+
+body.page-id-383 #the-content {
+	padding-bottom: 0 !important;
+}
+
+body.page-id-383 .woocommerce .products {
+	border-bottom: none !important;
+	margin-bottom: 0 !important;
+}
+
 #the-content .post-thumbnail {
 	width: calc(100% + 42px);
 	height: auto;
