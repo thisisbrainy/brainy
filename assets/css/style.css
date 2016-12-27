@@ -742,8 +742,13 @@ body.page-id-383 .woocommerce .products {
 	border: 0 !important;
 }
 
-.woocommerce .products .product.outofstock a {
+.woocommerce .products .product.outofstock a.woocommerce-LoopProduct-link {
 	opacity: .5;
+	filter: grayscale(1);
+}
+
+.woocommerce .products .product .button {
+	display: inline-block;
 }
 
 .woocommerce .products .product:nth-last-child(1),
