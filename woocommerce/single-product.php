@@ -22,6 +22,10 @@ get_header();
 
 			wc_get_template_part('content', 'single-product');
 
+			echo '<div class="product-entry">';
+			the_content();
+			echo '</div>';
+
 		endwhile;
 
 		do_action('woocommerce_after_main_content');

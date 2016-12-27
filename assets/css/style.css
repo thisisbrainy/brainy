@@ -150,26 +150,6 @@ a:hover {
 	margin-bottom: 40px;
 }
 
-#the-sidebar .heading {
-	margin-bottom: 40px;
-}
-
-#the-sidebar .heading h2 {
-	font-family: 'Source Sans Pro', 'Source Sans Pro', Sans-Serif, Arial;
-	font-size: 18px;
-	border: 0;
-	margin-top: -5px;
-}
-
-#the-sidebar .heading h2 a {
-	border: 0;
-}
-
-#the-sidebar .heading p {
-	font-family: 'Source Sans Pro', Sans-Serif, Arial;
-	font-size: 13px;
-}
-
 #the-sidebar .widget {
 	font-family: 'Source Sans Pro', Sans-Serif, Arial;
 	font-size: 14px;
@@ -203,6 +183,7 @@ a:hover {
 
 #the-sidebar .widget li {
 	width: calc(100% + 30px);
+	line-height: 1.25;
 	background: #fff;
 	border-bottom: 1px solid #ddd;
 	padding: 15px !important;
@@ -328,13 +309,6 @@ a:hover {
 	padding: 4px 10px 4px 10px;
 }
 
-#the-sidebar .footer {
-	font-family: 'Source Sans Pro', Sans-Serif, Arial;
-	font-size: 13px;
-	color: #999;
-	margin-top: 40px;
-}
-
 #the-content {
 	width: 100%;
 	background: #fff;
@@ -351,8 +325,6 @@ a:hover {
 }
 
 #the-content #post {
-	padding-left: 150px;
-	padding-right: 150px;
 	margin-bottom: 120px;
 }
 
@@ -365,11 +337,10 @@ body.woocommerce-page #the-content #post {
 }
 
 #the-content .post-thumbnail {
-	width: calc(100% + 300px);
+	width: 100%;
 	height: auto;
 	border-radius: 2px;
 	overflow: hidden;
-	margin-left: -150px;
 	margin-bottom: 27px;
 }
 
@@ -945,10 +916,44 @@ body.woocommerce-checkout article#post {
 	border: 0;
 }
 
+.woocommerce .product .images .woocommerce-main-image img {
+	margin-bottom: 20px;
+}
+
+.woocommerce div.product div.images div.thumbnails {
+	padding-top: 0 !important;
+}
+
+.woocommerce #respond input#submit.alt, .woocommerce a.button.alt, .woocommerce button.button.alt, .woocommerce input.button.alt {
+	color: #fff !important;
+	font-size: 13px !important;
+	font-weight: 600 !important;
+	background: #111 !important;
+	border-radius: 2px !important;
+}
+
 .woocommerce-error .button,
 .woocommerce-info .button,
 .woocommerce-message .button {
 	display: none !important;
+}
+
+.woocommerce #content div.product div.images, .woocommerce div.product div.images, .woocommerce-page #content div.product div.images, .woocommerce-page div.product div.images {
+	float: none;
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+	width: calc(100% + 40px);
+	margin-left: -20px;
+	padding: 20px;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+.product-entry {
+	width: calc(100% + 40px);
+	border-top: 1px solid #ddd;
+	padding: 20px;
+	margin-left: -20px;
 }
 
 /* Comments */
