@@ -203,6 +203,11 @@ a:hover {
 	background: #fbfbfb;
 }
 
+#the-sidebar .widget li .post-count {
+	float: right;
+	opacity: .5;
+}
+
 #the-sidebar .widget li a {
 	display: inline-block;
 	color: #111;
