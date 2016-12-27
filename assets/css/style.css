@@ -737,6 +737,15 @@ body.page-id-383 .woocommerce .products {
 	margin: 0 !important;
 }
 
+.woocommerce .products .product a {
+	display: block;
+	border: 0 !important;
+}
+
+.woocommerce .products .product.outofstock a {
+	opacity: .5;
+}
+
 .woocommerce .products .product:nth-last-child(1),
 .woocommerce .products .product:nth-last-child(2) {
 	border-bottom: 0;
