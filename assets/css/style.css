@@ -308,17 +308,6 @@ a:hover {
 	cursor: pointer;
 }
 
-#the-sidebar .widget.widget_archive li .post-count {
-	display: inline-block;
-	float: right;
-	font-size: 12px;
-	color: #444;
-	font-weight: 800;
-	text-transform: uppercase;
-	border: 0;
-	padding: 4px 10px 4px 10px;
-}
-
 #the-content {
 	width: 100%;
 	background: #fff;
