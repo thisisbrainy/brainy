@@ -813,6 +813,27 @@ form.woocommerce-checkout #payment li {
 	margin: 0;
 }
 
+form.woocommerce-checkout #payment img {
+	width: auto;
+	height: auto;
+}
+
+form.woocommerce-checkout #payment fieldset {
+	border: 0 !important;
+}
+
+#add_payment_method #payment div.payment_box, .woocommerce-cart #payment div.payment_box, .woocommerce-checkout #payment div.payment_box {
+	color: #555 !important;
+	font-size: 14px !important;
+	background: transparent !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+#add_payment_method #payment div.payment_box:before, .woocommerce-cart #payment div.payment_box:before, .woocommerce-checkout #payment div.payment_box:before {
+	display: none !important;
+}
+
 /* Comments */
 #comments {
 	font-family: 'Source Sans Pro', Sans-Serif, Arial;
