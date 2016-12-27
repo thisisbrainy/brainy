@@ -324,8 +324,25 @@ a:hover {
 	padding: 20px;
 }
 
+#the-content.is-blog {
+	background: transparent;
+	box-shadow: none;
+	border: none;
+	border-radius: 0;
+	padding: 0;
+}
+
 #the-content #post {
 	margin-bottom: 120px;
+}
+
+#the-content.is-blog #post {
+	background: #fff;
+	box-shadow: 0px 1px 3px rgba(0,0,0,.05);
+	border: 1px solid #ddd;
+	border-radius: 2px;
+	padding: 20px;
+	margin-bottom: 20px;
 }
 
 body.woocommerce-page #the-content #post {
@@ -337,17 +354,23 @@ body.woocommerce-page #the-content #post {
 }
 
 #the-content .post-thumbnail {
-	width: 100%;
+	width: calc(100% + 42px);
 	height: auto;
-	border-radius: 2px;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
 	overflow: hidden;
-	margin-bottom: 27px;
+	margin-top: -21px;
+	margin-left: -21px;
+	margin-bottom: 20px;
 }
 
 #the-content .post-thumbnail img {
 	width: 100%;
 	height: auto;
-	border-radius: 2px;
+	border-top-left-radius: 2px;
+	border-top-right-radius: 2px;
+	border-bottom-left-radius: 0 !important;
+	border-bottom-right-radius: 0 !important;
 }
 
 #the-content .post-title,
@@ -360,6 +383,19 @@ body.woocommerce-page #the-content #post {
 	line-height: 1.2;
 	margin-top: -5px !important;
 	margin-bottom: 20px;
+}
+
+#the-content.is-blog .post-title {
+	width: 80%;
+}
+
+#the-content.is-blog .post-title:after {
+	display: block;
+	content: '';
+	width: 50px;
+	height: 2px;
+	background: #ddd;
+	margin-top: 20px;
 }
 
 #the-content .post-title .price,
@@ -581,17 +617,19 @@ body.woocommerce-page #the-content #post {
 }
 
 #the-content .post-meta {
-	width: 100%;
+	width: calc(100% + 40px);
 	line-height: 1.75;
 	font-family: 'Source Sans Pro';
 	font-size: 12px;
 	font-weight: bold;
-	opacity: .45;
+	background: #fbfbfb;
+	border-top: 1px solid #ddd;
+	border-bottom-left-radius: 2px;
+	border-bottom-right-radius: 2px;
+	padding: 20px;
 	margin-top: 30px;
-}
-
-#the-content .post-meta:hover {
-	opacity: .75;
+	margin-left: -20px;
+	margin-bottom: -20px;
 }
 
 #the-content .post-meta i {
@@ -972,8 +1010,6 @@ body.woocommerce-checkout article#post {
 #comments {
 	font-family: 'Source Sans Pro', Sans-Serif, Arial;
 	font-size: 14px;
-	padding-left: 150px;
-	padding-right: 150px;
 	margin-bottom: 40px;
 }
 
@@ -1039,8 +1075,7 @@ body.woocommerce-checkout article#post {
 }
 
 #comments .comment-content {
-	font-family: 'Lora', Sans-Serif, Arial;
-	font-size: 16px;
+	font-size: 15px;
 	margin-top: 10px;
 	margin-bottom: 10px;
 }

@@ -2,7 +2,7 @@
 
 <div id="the-page" class="wrap">
 
-	<div id="the-content"<?php if(is_checkout() || is_single() || is_home()): ?> class="left"<?php endif; ?>>
+	<div id="the-content"<?php if(is_checkout() || is_single() || is_home()): ?> class="left<?php if(is_home() || is_single()): ?> is-blog<?php endif; ?>"<?php endif; ?>>
 		<?php sidelines_content(); ?>
 	</div>
 
@@ -16,7 +16,7 @@
 
 	<?php endif; ?>
 
-	<?php if(is_home()): ?>
+	<?php if(is_home() || is_single()): ?>
 
 		<div id="the-sidebar" class="right">
 

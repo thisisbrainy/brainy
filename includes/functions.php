@@ -81,9 +81,10 @@ function sidelines_post_meta() {
 	$tags = get_the_tags();
 	$categories = get_the_category();
 
-	echo '<span class="post-meta-date"><i class="fa fa-calendar"></i> ' . get_the_time('F jS, Y') . '</span><br>';
-	echo '<span class="post-meta-by"><i class="fa fa-pencil"></i> ' . get_the_author_link() . '</span><br>';
+	echo '<div class="left"><span class="post-meta-date"><i class="fa fa-calendar"></i> ' . get_the_time('F jS, Y') . '</span>';
+	echo '<span class="post-meta-by"><i class="fa fa-pencil"></i> ' . get_the_author_link() . '</span></div>';
 
+	/*
 	if(!empty($tags)) {
 
 		echo '<span class="post-meta-tags"><i class="fa fa-tags"></i> ';
@@ -108,7 +109,9 @@ function sidelines_post_meta() {
 		echo '</span><br>';
 
 	}
+	*/
 
+	/*
 	if(!empty($categories)) {
 
 		echo '<span class="post-meta-categories"><i class="fa fa-tags"></i> ';
@@ -133,8 +136,9 @@ function sidelines_post_meta() {
 		echo '</span><br>';
 
 	}
+	*/
 
-	echo '<i class="fa fa-comments"></i> <a href="' . get_the_permalink() . '">' . get_comments_number() . ' ' . __('comments') . '</a><br>';
+	echo '<div class="right"><i class="fa fa-comments"></i> <a href="' . get_the_permalink() . '">' . get_comments_number() . ' ' . __('comments') . '</a></div><div class="clear"></div>';
 
 }
 add_filter( 'woocommerce_widget_cart_is_hidden', 'always_show_cart', 40, 0 );
