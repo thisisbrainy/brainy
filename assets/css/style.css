@@ -911,7 +911,7 @@ body.woocommerce-checkout article#post {
 	padding-right: 15px;
 }
 
-.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
+.woocommerce .checkout_coupon .button {
 	font-size: 100%;
 	margin: 0;
 	line-height: 1;
