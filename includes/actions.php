@@ -4,6 +4,8 @@
 add_action('after_setup_theme', function() {
 
 	/* Support */
+	add_theme_support('woocommerce');
+
 	add_theme_support('custom-logo', [
 		'header-text' => ['site-title']
 	]);
