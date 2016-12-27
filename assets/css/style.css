@@ -716,6 +716,7 @@ body.woocommerce-page #the-content #post {
 
 .woocommerce .products .product img {
 	width: calc(100% - 40px) !important;
+	height: 220px !important;
 	border-radius: 2 !important;
 	margin-top: 20px !important;
 	margin-left: 20px !important;
@@ -896,6 +897,50 @@ body.woocommerce-checkout article#post {
 	margin-left: -20px !important;
 	margin-bottom: -5px !important;
 }
+
+.woocommerce form .form-row input.input-text, .woocommerce form .form-row textarea {
+	box-sizing: border-box;
+	width: 100%;
+	margin: 0;
+	outline: 0;
+	border-radius: 2px;
+	line-height: 1;
+	border: 1px solid #ddd;
+	height: 40px;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+.woocommerce #respond input#submit, .woocommerce a.button, .woocommerce button.button, .woocommerce input.button {
+	font-size: 100%;
+	margin: 0;
+	line-height: 1;
+	cursor: pointer;
+	position: relative;
+	text-decoration: none;
+	overflow: visible;
+	padding: .618em 1em;
+	font-weight: 700;
+	border-radius: 3px;
+	left: auto;
+	color: #515151;
+	background-color: #ebe9eb;
+	border: 0;
+	white-space: nowrap;
+	display: inline-block;
+	background-image: none;
+	box-shadow: none;
+	-webkit-box-shadow: none;
+	text-shadow: none;
+	height: 40px;
+	background: #111 !important;
+	color: #fff !important;
+	font-size: 13px !important;
+	font-weight: 600;
+	border-radius: 2px;
+	border: 0;
+}
+
 /* Comments */
 #comments {
 	font-family: 'Source Sans Pro', Sans-Serif, Arial;
