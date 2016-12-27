@@ -3,7 +3,7 @@
 
 /* Overall */
 body {
-	font-family: 'Lora', Arial, Sans-Serif;
+	font-family: 'Source Sans Pro', Arial, Sans-Serif;
 	font-size: 15px;
 	color: #555;
 	line-height: 1.75;
@@ -954,6 +954,18 @@ body.woocommerce-checkout article#post {
 	border-top: 1px solid #ddd;
 	padding: 20px;
 	margin-left: -20px;
+}
+
+.single_add_to_cart_button {
+	height: 40px !important;
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+}
+
+.input-text.qty {
+	height: 40px !important;
+	border: 1px solid #ddd !important;
+	border-radius: 2px !important;
 }
 
 /* Comments */
