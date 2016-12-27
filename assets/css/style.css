@@ -798,6 +798,7 @@ form.woocommerce-checkout #payment {
 	border-radius: 0;
 	border-top: 1px solid #ddd;
 	padding: 20px;
+	padding-bottom: 0;
 	margin-left: -20px;
 }
 
@@ -828,12 +829,73 @@ form.woocommerce-checkout #payment fieldset {
 	background: transparent !important;
 	padding: 0 !important;
 	margin: 0 !important;
+	margin-top: 20px !important;
 }
 
 #add_payment_method #payment div.payment_box:before, .woocommerce-cart #payment div.payment_box:before, .woocommerce-checkout #payment div.payment_box:before {
 	display: none !important;
 }
 
+form.woocommerce-checkout #payment input,
+form.woocommerce-checkout #payment select {
+	border: 1px solid #ddd !important;
+	border-radius: 2px !important;
+	height: 40px !important;
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+	font-size: 14px !important;
+}
+
+#add_payment_method #payment div.form-row, .woocommerce-cart #payment div.form-row, .woocommerce-checkout #payment div.form-row {
+	padding: 0 !important;
+}
+
+.woocommerce #payment #place_order, .woocommerce-page #payment #place_order {
+	float: left;
+	border-radius: 2px !important;
+	background: #111;
+	border: 0 !important;
+	margin-top: 20px !important;
+}
+
+body.woocommerce-checkout article#post {
+	margin-bottom: 0 !important;
+}
+
+.woocommerce-message, .woocommerce-error, .woocommerce-info {
+	width: calc(100% + 40px);
+	font-family: 'Source Sans Pro',Sans-Serif,Arial;
+	background: #fbfbfb;
+	border-top: 1px solid #ddd;
+	color: #555;
+	padding: 20px !important;
+	margin-bottom: 0px!important;
+	margin-left: -20px !important;
+	margin-bottom: -5px !important;
+}
+
+.woocommerce-message a, .woocommerce-error a, .woocommerce-info a {
+	color: #111;
+	text-decoration: underline;
+	border: 0;
+}
+
+.woocommerce-message:before, .woocommerce-error:before, .woocommerce-info:before {
+	display: none;
+}
+
+.woocommerce form.checkout_coupon, .woocommerce form.login, .woocommerce form.register {
+	width: calc(100% + 40px);
+	background: #fbfbfb !important;
+	border: 0 !important;
+	border-radius: 0 !important;
+	padding: 20px !important;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+	margin-top: 0 !important;
+	margin-left: -20px !important;
+	margin-bottom: -5px !important;
+}
 /* Comments */
 #comments {
 	font-family: 'Source Sans Pro', Sans-Serif, Arial;
