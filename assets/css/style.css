@@ -385,6 +385,13 @@ body.woocommerce-page #the-content #post {
 	margin-bottom: 20px;
 }
 
+.imagewrapper {
+	width: 100%;
+	height: 200px !important;
+	overflow: hidden;
+	border-radius: 2px;
+}
+
 #the-content.is-blog .post-title {
 	width: 80%;
 }
@@ -708,7 +715,7 @@ body.woocommerce-page #the-content #post {
 
 .woocommerce .products .product {
 	width: 50% !important;
-	height: 380px;
+	height: 320px;
 	font-family: 'Source Sans Pro', Sans-Serif, Arial;
 	text-align: center; !important;
 	list-style: none !important;
@@ -718,6 +725,11 @@ body.woocommerce-page #the-content #post {
 	margin: 0 !important;
 }
 
+.woocommerce .products .product:nth-last-child(1),
+.woocommerce .products .product:nth-last-child(2) {
+	border-bottom: 0;
+}
+
 .woocommerce .products .product:nth-child(2n) {
 	border-right: 0;
 	margin-right: 0 !important;
@@ -725,8 +737,7 @@ body.woocommerce-page #the-content #post {
 
 .woocommerce .products .product img {
 	width: calc(100% - 40px) !important;
-	height: 220px !important;
-	border-radius: 2 !important;
+	border-radius: 0 !important;
 	margin-top: 20px !important;
 	margin-left: 20px !important;
 }
