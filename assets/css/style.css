@@ -905,7 +905,8 @@ form.woocommerce-checkout #payment select {
 	margin-top: 20px !important;
 }
 
-body.woocommerce-checkout article#post {
+body.woocommerce-checkout article#post,
+.page.type-page {
 	margin-bottom: 0 !important;
 }
 
