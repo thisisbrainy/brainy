@@ -1028,6 +1028,7 @@ body.woocommerce-checkout article#post,
 	width: calc(100% + 40px);
 	border-top: 1px solid #ddd;
 	padding: 20px;
+	padding-bottom: 0;
 	margin-left: -20px;
 }
 
