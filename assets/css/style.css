@@ -146,7 +146,7 @@ a:hover {
 
 #the-sidebar {
 	display: block;
-	width: 240px;
+	width: 260px;
 	margin-bottom: 40px;
 }
 
@@ -319,7 +319,7 @@ a:hover {
 }
 
 #the-content.left {
-	width: calc(100% - 260px);
+	width: calc(100% - 280px);
 	padding: 20px;
 }
 
@@ -399,7 +399,7 @@ body.page-id-383 .woocommerce .products {
 
 .imagewrapper {
 	width: 100%;
-	height: 200px !important;
+	height: 350px !important;
 	overflow: hidden;
 	border-radius: 2px;
 }
@@ -726,7 +726,7 @@ body.page-id-383 .woocommerce .products {
 
 .woocommerce .products .product {
 	width: 50% !important;
-	height: 320px;
+	height: 465px;
 	font-family: 'Source Sans Pro', Sans-Serif, Arial;
 	text-align: center; !important;
 	list-style: none !important;
