@@ -1,21 +1,5 @@
 <?php
 
-/* WooCommerce */
-add_filter('woocommerce_checkout_fields', function($fields) {
-
-	unset($fields['order']['order_comments']);
-	unset($fields['billing']['billing_postcode']);
-	unset($fields['billing']['billing_city']);
-	unset($fields['billing']['billing_address_1']);
-	unset($fields['billing']['billing_address_2']);
-	unset($fields['billing']['billing_country']);
-	unset($fields['billing']['billing_phone']);
-	unset($fields['billing']['billing_company']);
-
-	return $fields;
-
-});
-
 /* Better excerpts */
 add_filter('excerpt_more', function() {
 

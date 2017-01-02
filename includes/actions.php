@@ -4,18 +4,6 @@
 add_action('after_setup_theme', function() {
 
 	/* Support */
-	add_theme_support('custom-logo', [
-		'header-text' => ['site-title']
-	]);
-
-	add_theme_support('custom-background', [
-		'default-color' => 'f2f2f2'
-	]);
-
-	add_theme_support('custom-header', [
-		'header-text' => false
-	]);
-
 	add_theme_support('post-thumbnails');
 
 	add_theme_support('title-tag');

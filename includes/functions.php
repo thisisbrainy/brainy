@@ -1,40 +1,5 @@
 <?php
 
-remove_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 10);
-add_action( 'woocommerce_before_shop_loop_item_title', 'woocommerce_template_loop_product_thumbnail', 10);
-/**
- * WooCommerce Loop Product Thumbs
- **/
- if ( ! function_exists( 'woocommerce_template_loop_product_thumbnail' ) ) {
-	function woocommerce_template_loop_product_thumbnail() {
-		echo woocommerce_get_product_thumbnail();
-	}
- }
-/**
- * WooCommerce Product Thumbnail
- **/
- if ( ! function_exists( 'woocommerce_get_product_thumbnail' ) ) {
-
-	function woocommerce_get_product_thumbnail( $size = 'shop_catalog', $placeholder_width = 0, $placeholder_height = 0  ) {
-		global $post, $woocommerce;
-
-			$output = '<div class="imagewrapper">';
-			if ( has_post_thumbnail() ) {
-
-				$output .= get_the_post_thumbnail( $post->ID, $size );
-
-			} else {
-
-				$output .= '<img src="'. woocommerce_placeholder_img_src() .'" alt="Placeholder" />';
-
-			}
-
-			$output .= '</div>';
-
-			return $output;
-	}
- }
-
 function sidelines_content() {
 
 	if(have_posts()) {
@@ -175,8 +140,4 @@ function sidelines_post_meta() {
 
 	echo '<i class="fa fa-comments"></i> <a href="' . get_the_permalink() . '">' . get_comments_number() . ' ' . __('comments') . '</a>';
 
-}
-add_filter( 'woocommerce_widget_cart_is_hidden', 'always_show_cart', 40, 0 );
-function always_show_cart() {
-    return false;
 }
