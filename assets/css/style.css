@@ -97,7 +97,7 @@ a:hover {
 	text-shadow: 0px -1px 0px rgba(0,0,0,.2);
 	text-indent: -5000em;
 	background: url(../images/logo.png) no-repeat;
-	background-size: cover;
+	background-size: 100% auto;
 	border: 0;
 }
 
