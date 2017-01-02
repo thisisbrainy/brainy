@@ -4,8 +4,6 @@
 add_action('after_setup_theme', function() {
 
 	/* Support */
-	add_theme_support('woocommerce');
-
 	add_theme_support('custom-logo', [
 		'header-text' => ['site-title']
 	]);
@@ -37,21 +35,6 @@ add_action('init', function() {
 
 	register_nav_menus([
 		'primary' => __('Primary Menu')
-	]);
-
-});
-
-/* Register sidebar */
-add_action('widgets_init', function() {
-
-	register_sidebar([
-		'name' => __('Sidebar', 'sidelines'),
-		'id' => 'sidebar'
-	]);
-
-	register_sidebar([
-		'name' => __('Shop Sidebar', 'sidelines'),
-		'id' => 'woo-sidebar'
 	]);
 
 });

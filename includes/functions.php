@@ -116,8 +116,8 @@ function sidelines_post_meta() {
 	$tags = get_the_tags();
 	$categories = get_the_category();
 
-	echo '<div class="left"><span class="post-meta-date"><i class="fa fa-calendar"></i> ' . get_the_time('F jS, Y') . '</span>';
-	echo '<span class="post-meta-by"><i class="fa fa-pencil"></i> ' . get_the_author_link() . '</span></div>';
+	echo '<span class="post-meta-date"><i class="fa fa-calendar"></i> ' . get_the_time('F jS, Y') . '</span>';
+	echo '<span class="post-meta-by"><i class="fa fa-pencil"></i> ' . get_the_author_link() . '</span><br>';
 
 	/*
 	if(!empty($tags)) {
@@ -173,7 +173,7 @@ function sidelines_post_meta() {
 	}
 	*/
 
-	echo '<div class="right"><i class="fa fa-comments"></i> <a href="' . get_the_permalink() . '">' . get_comments_number() . ' ' . __('comments') . '</a></div><div class="clear"></div>';
+	echo '<i class="fa fa-comments"></i> <a href="' . get_the_permalink() . '">' . get_comments_number() . ' ' . __('comments') . '</a>';
 
 }
 add_filter( 'woocommerce_widget_cart_is_hidden', 'always_show_cart', 40, 0 );

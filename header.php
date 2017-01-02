@@ -10,12 +10,15 @@
 
 		<div class="wrap">
 
-			<h1 class="header-title left">
+			<h1 class="header-title">
 				<a href="<?php echo home_url('/'); ?>"><?php bloginfo('name'); ?></a>
 			</h1>
 
-			<div class="header-menu right">
-				<?php wp_nav_menu(['theme_location' => 'primary', 'container' => '']); ?>
+			<div class="header-menu">
+
+				<a target="_blanl" title="Premium WordPress Plugins" href="https://sellfy.com/askodotme">Shop</a>
+				<a title="About Asko" href="https://asko.me/about">About</a>
+
 			</div>
 
 		</div>
