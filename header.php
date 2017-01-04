@@ -17,8 +17,7 @@
 
 			<div class="header-menu">
 
-				<a target="_blank" title="Premium WordPress Plugins" href="https://sellfy.com/askodotme">Shop</a>
-				<a title="About Brainy" href="https://brainy.blog/about">About</a>
+				<?php wp_nav_menu(['theme_location' => 'primary', 'container' => '']); ?>
 
 			</div>
 
