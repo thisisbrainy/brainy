@@ -17,8 +17,8 @@
 
 			<div class="header-menu">
 
-				<a target="_blanl" title="Premium WordPress Plugins" href="https://sellfy.com/askodotme">Shop</a>
-				<a title="About Asko" href="https://asko.me/about">About</a>
+				<a target="_blank" title="Premium WordPress Plugins" href="https://sellfy.com/askodotme">Shop</a>
+				<a title="About Brainy" href="https://brainy.blog/about">About</a>
 
 			</div>
 
