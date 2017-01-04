@@ -92,12 +92,12 @@ a:hover {
 	display: block;
 	color: #fff;
 	line-height: 1;
-	font-weight: 400;
+	font-weight: 600;
 	font-size: 12px;
 	text-decoration: none;
-	letter-spacing: 2px;
 	text-transform: uppercase;
 	border: 0;
+	opacity: .9;
 }
 
 #header .header-menu {
