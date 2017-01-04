@@ -113,6 +113,14 @@ a:hover {
 	margin-right: 10px;
 }
 
+#header .header-menu li a {
+	color: #999;
+}
+
+#header .header-menu li a:hover {
+	color: #111;
+}
+
 /* Page */
 #the-page {
 	margin-top: 20px;
