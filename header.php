@@ -11,10 +11,6 @@
 
 		<div class="wrap">
 
-			<h1 class="header-title">
-				<a href="<?php echo home_url('/'); ?>"><?php bloginfo('name'); ?></a>
-			</h1>
-
 			<div class="header-menu">
 
 				<?php wp_nav_menu(['theme_location' => 'primary', 'container' => '']); ?>

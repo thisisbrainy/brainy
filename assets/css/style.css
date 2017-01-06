@@ -1,4 +1,3 @@
-@import url('https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i|Montserrat:400,700|PT+Sans:400,400i,700,700i|Titillium+Web:300,400,600&subset=cyrillic,cyrillic-ext,latin-ext');
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i');
 @import url('https://fonts.googleapis.com/css?family=Hind:300,400,600,700');
 
@@ -80,35 +79,14 @@ a:hover {
 	margin-bottom: 60px;
 }
 
-#header .header-title {
-	display: inline-block;
-	font-family: 'Source Sans Pro', Sans-Serif, Arial;
-	font-size: 18px;
-	font-weight: 300;
-	background: #111;
-	padding: 10px;
-}
-
-#header .header-title a {
-	display: block;
-	color: #fff;
-	line-height: 1;
-	font-weight: 600;
-	font-size: 12px;
-	text-decoration: none;
-	text-transform: uppercase;
-	border: 0;
-	opacity: .9;
-}
-
 #header .header-menu {
 	display: inline-block;
-	margin-left: 15px;
 }
 
 #header .header-menu li {
 	display: inline-block;
 	font-size: 12px;
+	font-weight: 600;
 	color: #999;
 	text-transform: uppercase;
 	margin-right: 10px;
@@ -119,7 +97,8 @@ a:hover {
 }
 
 #header .header-menu li a:hover {
-	color: #111;
+	color: #777;
+	text-decoration: none;
 }
 
 /* Page */
