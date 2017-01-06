@@ -40,3 +40,10 @@ add_filter('get_archives_link', function($variable) {
 	return $variable;
 
 });
+
+function pu_remove_script_version( $src ){
+    return remove_query_arg( 'ver', $src );
+}
+
+add_filter( 'script_loader_src', 'pu_remove_script_version' );
+add_filter( 'style_loader_src', 'pu_remove_script_version' );
