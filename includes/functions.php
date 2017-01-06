@@ -132,6 +132,4 @@ function sidelines_post_meta() {
 	}
 	*/
 
-	echo '<i class="fa fa-comments"></i> <a href="' . get_the_permalink() . '">' . get_comments_number() . ' ' . __('comments') . '</a>';
-
 }
