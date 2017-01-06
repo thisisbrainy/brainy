@@ -28,12 +28,6 @@ function sidelines_content() {
 
 	}
 
-	if(is_single()) {
-
-		require SIDELINES_DIR . '/views/partials/comments.php';
-
-	}
-
 	if(is_home()) {
 
 		sidelines_pagination();
