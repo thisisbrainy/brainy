@@ -8,6 +8,6 @@ require_once __DIR__ . '/includes/actions.php';
 require_once __DIR__ . '/includes/functions.php';
 
 /* Assets */
-sidelines_asset('css', 'font-awesome.css', false);
-sidelines_asset('css', 'reset.css', false);
-sidelines_asset('css', 'style.css', false);
+sidelines_asset('css', 'font-awesome.css', true);
+sidelines_asset('css', 'reset.css', true);
+sidelines_asset('css', 'style.css', true);
