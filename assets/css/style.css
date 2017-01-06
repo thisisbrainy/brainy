@@ -171,13 +171,13 @@ a:hover {
 	font-size: 23px;
 	font-weight: 700;
 	line-height: 1.2;
-	margin-bottom: 0px;
+	margin-bottom: 20px;
 }
 
 @media all and (max-width: 650px) {
 
 	#the-content .post-title {
-		font-size: 24px;
+		font-size: 21px;
 	}
 
 }
