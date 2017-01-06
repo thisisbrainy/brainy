@@ -76,7 +76,8 @@ a:hover {
 /* Header */
 #header {
 	width: 100%;
-	margin-bottom: 60px;
+	margin-top: 20px;
+	margin-bottom: 80px;
 }
 
 #header .header-menu {
@@ -87,17 +88,17 @@ a:hover {
 	display: inline-block;
 	font-size: 12px;
 	font-weight: 600;
-	color: #999;
+	color: #bbb;
 	text-transform: uppercase;
-	margin-right: 10px;
+	margin-right: 20px;
 }
 
 #header .header-menu li a {
-	color: #999;
+	color: #bbb;
 }
 
 #header .header-menu li a:hover {
-	color: #777;
+	color: #999;
 	text-decoration: none;
 }
 
