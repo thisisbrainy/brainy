@@ -20,13 +20,6 @@
 
 				<div class="post-content"><?php the_content(); ?></div>
 
-				<div class="post-meta">
-
-					<span class="post-meta-date"><i class="fa fa-calendar"></i> <?php echo get_the_time('F jS, Y'); ?></span>
-					<span class="post-meta-by"><i class="fa fa-pencil"></i> <?php echo get_the_author_link(); ?></span>
-
-				</div>
-
 			</article>
 
 		<?php endwhile; endif; ?>

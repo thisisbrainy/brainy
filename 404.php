@@ -1,3 +1,5 @@
+<?php get_header(); ?>
+
 <article id="post" class="post not-found">
 
 	<h2 class="post-title">404: Not Found</h2>
@@ -9,3 +11,5 @@
 	</div>
 
 </article>
+
+<?php get_footer();
