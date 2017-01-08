@@ -81,7 +81,7 @@ a:hover {
 }
 
 #header .header-menu {
-	display: inline-block;
+	display: block;
 	padding-left: 52px;
 }
 
@@ -96,6 +96,26 @@ a:hover {
 	position: absolute;
 	top: 2px;
 	left: 0;
+}
+
+#header .header-menu:after {
+	display: block;
+	content: '';
+	width: calc(100% + 100px);
+	height: 0;
+	border-top: 2px solid #ddd;
+	position: absolute;
+	left: -50px;
+	margin-top: 22px;
+}
+
+@media all and (max-width: 650px) {
+
+	#header .header-menu:after {
+		width: 100%;
+		left: 0;
+	}
+
 }
 
 #header .header-menu li {
