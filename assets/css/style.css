@@ -128,10 +128,14 @@ a:hover {
 
 @media all and (max-width: 650px) {
 
-	#header .header-menu li {
-		font-size: 17px;
+	#header .header-menu:before {
+		top: 0;
 	}
 	
+	#header .header-menu li {
+		font-size: 15px;
+	}
+
 }
 
 #header .header-menu li a {
