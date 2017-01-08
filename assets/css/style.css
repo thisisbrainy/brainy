@@ -76,8 +76,16 @@ a:hover {
 /* Header */
 #header {
 	width: 100%;
-	margin-top: 20px;
+	padding-top: 20px;
 	margin-bottom: 80px;
+}
+
+@media all and (max-width: 650px) {
+
+	#header {
+		background: #fbfbfb;
+	}
+
 }
 
 #header .header-menu {
@@ -131,7 +139,7 @@ a:hover {
 	#header .header-menu:before {
 		top: 0;
 	}
-	
+
 	#header .header-menu li {
 		font-size: 15px;
 	}
