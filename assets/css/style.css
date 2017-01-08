@@ -112,8 +112,8 @@ a:hover {
 @media all and (max-width: 650px) {
 
 	#header .header-menu:after {
-		width: 100%;
-		left: 0;
+		width: calc(100% + 40px);
+		left: -20px;
 	}
 
 }
@@ -124,6 +124,14 @@ a:hover {
 	font-weight: 300;
 	color: #bbb;
 	margin-right: 15px;
+}
+
+@media all and (max-width: 650px) {
+
+	#header .header-menu li {
+		font-size: 17px;
+	}
+	
 }
 
 #header .header-menu li a {
