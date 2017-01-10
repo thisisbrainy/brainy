@@ -57,6 +57,10 @@ a:hover {
 	float: right;
 }
 
+.hidden {
+	display: none !important;
+}
+
 .wrap {
 	width: 650px;
 	margin-left: auto;
@@ -80,12 +84,20 @@ a:hover {
 	margin-bottom: 80px;
 }
 
+#header .wrap {
+	width: 1000px;
+}
+
 @media all and (max-width: 650px) {
 
 	#header {
 		background: #fbfbfb;
 		padding-bottom: 20px;
 		margin-bottom: 40px;
+	}
+
+	#header .wrap {
+		width: 100%;
 	}
 
 }
@@ -108,7 +120,7 @@ a:hover {
 	left: 0;
 }
 
-#header .header-menu:after {
+#header .wrap:after {
 	display: block;
 	content: '';
 	width: calc(100% + 100px);
@@ -145,6 +157,7 @@ a:hover {
 
 	#header .header-menu li {
 		font-size: 15px;
+		margin-right: 12px;
 	}
 
 }
@@ -160,6 +173,49 @@ a:hover {
 
 #header .header-menu li.current-menu-item a {
 	color: #111;
+}
+
+#header .header-search {
+
+}
+
+#header .header-search form {
+	display: inline-block;
+	margin-right: 10px;
+}
+
+#header .header-search input[type="search"] {
+	width: 200px;
+	height: 30px;
+	background: #eee;
+	border: 0;
+	outline: none;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+
+@media all and (max-width: 650px) {
+
+	#header .header-search form {
+		position: absolute;
+		margin: 0;
+		right: 30px;
+	}
+
+	#header .header-search input[type="search"] {
+		width: 250px;
+	}
+
+}
+
+#header .header-search a {
+	display: inline-block;
+	color: #111;
+	opacity: .5;
+}
+
+#header .header-search a:hover {
+	opacity: 1;
 }
 
 /* Page */
@@ -226,7 +282,7 @@ a:hover {
 @media all and (max-width: 650px) {
 
 	#the-content .post-title {
-		font-size: 21px;
+		font-size: 19px;
 	}
 
 }
@@ -305,14 +361,49 @@ a:hover {
 	margin-bottom: 20px;
 }
 
+@media all and (max-width: 650px) {
+
+	#the-content h1,
+	#comments .comment-content h1,
+	#the-content h2,
+	#comments .comment-content h2,
+	#the-content h3,
+	#comments .comment-content h3,
+	#the-content h4,
+	#comments .comment-content h4,
+	#the-content h5,
+	#comments .comment-content h5 {
+		font-size: 17px;
+	}
+
+}
+
 #the-content h2,
 #comments .comment-content h2 {
 	font-size: 18px;
 }
 
+@media all and (max-width: 650px) {
+
+	#the-content h2,
+	#comments .comment-content h2 {
+		font-size: 16px;
+	}
+
+}
+
 #the-content h3,
 #comments .comment-content h3 {
 	font-size: 17px;
+}
+
+@media all and (max-width: 650px) {
+
+	#the-content h3,
+	#comments .comment-content h3 {
+		font-size: 15px;
+	}
+
 }
 
 #the-content h4,

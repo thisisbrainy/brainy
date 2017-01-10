@@ -1,4 +1,0 @@
-/* DOM Ready stuff */
-$(function() {
-
-});

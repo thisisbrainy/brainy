@@ -11,11 +11,23 @@
 
 		<div class="wrap">
 
-			<div class="header-menu">
+			<div class="header-menu left">
 
 				<?php wp_nav_menu(['theme_location' => 'primary', 'container' => '']); ?>
 
 			</div>
+
+			<div class="header-search right">
+
+				<form method="get" action="<?php echo home_url('/'); ?>" class="hidden">
+					<input type="search" name="s">
+				</form>
+
+				<a href="javascript:;"><i class="fa fa-search"></i></a>
+
+			</div>
+
+			<div class="clear"></div>
 
 		</div>
 
