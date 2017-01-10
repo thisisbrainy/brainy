@@ -19,11 +19,11 @@
 
 			<div class="header-search right">
 
-				<form method="get" action="<?php echo home_url('/'); ?>" class="hidden">
+				<form method="get" id="search-form" name="search" action="<?php echo home_url('/'); ?>" class="hidden">
 					<input type="search" name="s">
 				</form>
 
-				<a href="javascript:;"><i class="fa fa-search"></i></a>
+				<a href="javascript:;" id="search-button"><i class="fa fa-search"></i></a>
 
 			</div>
 

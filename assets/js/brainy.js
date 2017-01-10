@@ -1,18 +1,14 @@
-/* DOM Ready stuff */
-$(function() {
+/* Search */
+document.getElementById('search-button').onclick = function() {
 
-	$('.header-search a').on('click', function() {
+	if(document.getElementsByTagName('form')[0].getAttribute('class') === 'hidden') {
 
-		if($('.header-search form').hasClass('hidden')) {
+		document.getElementsByTagName('form')[0].removeAttribute('class');
 
-			$('.header-search form').removeClass('hidden');
+	} else {
 
-		} else {
+		document.forms.search.submit();
 
-			$('.header-search form').submit();
+	}
 
-		}
-
-	});
-
-});
+};
