@@ -225,10 +225,10 @@ a:hover {
 }
 
 #the-content .post-thumbnail {
-	width: calc(100% + 500px);
-	height: 410px;
+	width: calc(100% + 350px);
+	height: 375px;
 	overflow: hidden;
-	margin-left: -250px;
+	margin-left: -175px;
 	/* margin-left: -175px; */
 	margin-bottom: 40px;
 }
