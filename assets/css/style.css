@@ -139,6 +139,11 @@ a:hover {
 		left: -20px;
 	}
 
+	#header .wrap:after {
+		width: calc(100% + 40px);
+		left: -20px;
+	}
+
 }
 
 #header .header-menu li {
