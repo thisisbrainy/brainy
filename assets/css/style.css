@@ -80,7 +80,9 @@ a:hover {
 /* Header */
 #header {
 	width: 100%;
-	padding-top: 20px;
+	height: 60px;
+	line-height: 60px;
+	background: #eee;
 	margin-bottom: 80px;
 }
 
@@ -91,8 +93,6 @@ a:hover {
 @media all and (max-width: 650px) {
 
 	#header {
-		background: #fbfbfb;
-		padding-bottom: 20px;
 		margin-bottom: 40px;
 	}
 
@@ -104,31 +104,20 @@ a:hover {
 
 #header .header-menu {
 	display: block;
-	padding-left: 52px;
+	padding-left: 45px;
 }
 
 #header .header-menu:before {
 	display: block;
 	content: '';
-	width: 30px;
-	height: 30px;
+	width: 25px;
+	height: 25px;
 	background: url(https://brainy.blog/wp-content/uploads/sites/2/2017/01/asd-300x300.png) no-repeat;
 	background-size: cover;
-	border-radius: 100%;
+	border-radius: 2px;
 	position: absolute;
-	top: 2px;
+	top: 17.5px;
 	left: 0;
-}
-
-#header .wrap:after {
-	display: block;
-	content: '';
-	width: calc(100% + 100px);
-	height: 0;
-	border-top: 2px solid #ddd;
-	position: absolute;
-	left: -50px;
-	margin-top: 22px;
 }
 
 @media all and (max-width: 650px) {
@@ -139,26 +128,17 @@ a:hover {
 		left: -20px;
 	}
 
-	#header .wrap:after {
-		width: calc(100% + 40px);
-		left: -20px;
-	}
-
 }
 
 #header .header-menu li {
 	display: inline-block;
-	font-size: 19px;
-	font-weight: 300;
+	font-size: 15px;
+	font-weight: 600;
 	color: #bbb;
 	margin-right: 15px;
 }
 
 @media all and (max-width: 650px) {
-
-	#header .header-menu:before {
-		top: 0;
-	}
 
 	#header .header-menu li {
 		font-size: 15px;
@@ -192,8 +172,10 @@ a:hover {
 #header .header-search input[type="search"] {
 	width: 200px;
 	height: 30px;
-	background: #eee;
+	background: #fff;
+	box-shadow: 0px 1px 3px rgba(0,0,0,.05);
 	border: 0;
+	border-radius: 2px;
 	outline: none;
 	padding-left: 10px;
 	padding-right: 10px;
