@@ -2,7 +2,7 @@
 
 <div id="the-page" class="wrap">
 
-	<div id="the-content">
+	<div id="the-content" class="blog">
 
 		<?php if(have_posts()): while(have_posts()): the_post(); ?>
 

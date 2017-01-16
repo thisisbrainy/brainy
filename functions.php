@@ -12,3 +12,6 @@ the_asset('css', 'font-awesome.css', true);
 the_asset('css', 'reset.css', true);
 the_asset('css', 'style.css', true);
 the_asset('js', 'brainy.js', true);
+
+/* Variables */
+$work = the_work();
