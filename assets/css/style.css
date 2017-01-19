@@ -253,16 +253,10 @@ section#about .work li a p {
 }
 
 section#about .recent-posts {
-	margin-bottom: 40px;
 }
 
 section#about .recent-posts li {
 	width: 100%;
-	border-top: 1px solid #ddd;
-}
-
-section#about .recent-posts li:last-child {
-	border-bottom: 1px solid #ddd;
 }
 
 section#about .recent-posts li a {
@@ -275,7 +269,8 @@ section#about .recent-posts li a {
 }
 
 section#about .recent-posts li a:hover {
-	background: #fbfbfb;
+	background: #eee;
+	border-radius: 2px;
 }
 
 section#about .recent-posts li h3 {
@@ -289,7 +284,7 @@ section#about .recent-posts li a:hover h3 {
 }
 
 section#about .recent-posts li .date {
-	font-size: 13px;
+	font-size: 12px;
 	font-weight: 300;
 	color: #999;
 	text-transform: uppercase;

@@ -71,7 +71,7 @@ get_header(); ?>
 						<a href="<?php the_permalink(); ?>">
 
 							<h3><?php the_title(); ?></h3>
-							<div class="date"><?php the_time(); ?></div>
+							<div class="date"><?php echo get_the_time('F jS, Y'); ?></div>
 
 						</a>
 
@@ -83,7 +83,7 @@ get_header(); ?>
 
 		</div> <!-- // recent posts -->
 
-		<div class="call-to-action">
+		<div class="hidden call-to-action">
 
 			<!-- <a href="<?php echo home_url('/blog'); ?>">There's more</a> -->
 
