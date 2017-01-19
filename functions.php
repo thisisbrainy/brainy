@@ -18,10 +18,10 @@ the_asset('js', 'brainy.js', true);
 /* Variables */
 $work = new WP_Query([
 	'post_type' => 'bcpt_work',
-	'posts_per_page' => 6
+	'posts_per_page' => 9
 ]);
 
 $blog = new WP_Query([
 	'post_type' => 'post',
-	'posts_per_page' => 6
+	'posts_per_page' => 8
 ]);
