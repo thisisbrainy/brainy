@@ -29,7 +29,7 @@ get_header(); ?>
 
 					<li style="background:url(<?php the_post_thumbnail_url(); ?>) no-repeat;">
 
-						<a href="<?php echo get_post_meta(get_the_ID(), 'link_to', true); ?>" title="<?php the_title(); ?>">
+						<a target="_blank" href="<?php echo get_post_meta(get_the_ID(), 'link_to', true); ?>" title="<?php the_title(); ?>">
 
 							<h3><?php the_title(); ?></h3>
 							<p><?php echo get_the_content(); ?></p>
