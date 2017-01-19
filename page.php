@@ -1,30 +1,32 @@
-<?php get_header(); ?>
+<?php
 
-<div id="the-page" class="wrap">
+/**
+ * @package WordPress
+ * @subpackage brainy
+ * @since 1.0
+ */
 
-	<div id="the-content" class="blog">
+get_header(); ?>
+
+<div class="container post">
+
+	<section id="post">
 
 		<?php if(have_posts()): while(have_posts()): the_post(); ?>
 
-			<article id="post" <?php post_class(); ?>>
+			<article id="single-post">
 
-				<?php if(has_post_thumbnail()): ?>
+				<h2 class="post-title">
+					<a href="<?php the_permalink(); ?>" rel="bookmark"><?php the_title(); ?></a>
+				</h2>
 
-					<div class="post-thumbnail">
-						<?php the_post_thumbnail(); ?>
-					</div>
-
-				<?php endif; ?>
-
-				<?php the_title('<h2 class="post-title"><a href="' . esc_url(get_permalink()) . '" rel="bookmark">', '</a></h2>'); ?></h2>
-
-				<div class="post-content"><?php the_content(); ?></div>
+				<div class="post-entry"><?php the_content(); ?></div>
 
 			</article>
 
 		<?php endwhile; endif; ?>
 
-	</div>
+	</section>
 
 </div>
 
