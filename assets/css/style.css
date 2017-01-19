@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i');
 @import url('https://fonts.googleapis.com/css?family=Hind:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700,700i');
 
 /* Overall */
 body {
@@ -490,6 +491,7 @@ article#single-post .post-title a:hover {
 }
 
 article#single-post .post-entry {
+	font-family: 'PT Serif', Georgia, Serif;
 	font-size: 16px;
 	text-align: justify;
 }
@@ -501,6 +503,8 @@ article#single-post .post-entry p {
 article#single-post .post-entry h2,
 article#single-post .post-entry h3,
 article#single-post .post-entry h4 {
+	font-family: 'Source Sans Pro', Helvetica, Sans-Serif, Arial;
+	color: #111;
 	margin-top: 40px;
 }
 
