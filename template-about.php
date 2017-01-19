@@ -29,16 +29,10 @@ get_header(); ?>
 
 					<li style="background:url(<?php the_post_thumbnail_url(); ?>) no-repeat;">
 
-						<?php
-						$work_url = explode(':', get_the_title())[1];
-						$work_title = explode(':', get_the_title())[0];
-						$work_content = get_the_content();
-						?>
+						<a href="<?php echo get_post_meta(get_the_ID(), 'link_to', true); ?>" title="<?php the_title(); ?>">
 
-						<a href="<?php echo $work_url; ?>" title="<?php echo $work_title; ?>">
-
-							<h3><?php echo $work_title; ?></h3>
-							<p><?php echo $work_content; ?></p>
+							<h3><?php the_title(); ?></h3>
+							<p><?php echo get_the_content(); ?></p>
 
 						</a>
 
