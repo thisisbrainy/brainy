@@ -265,18 +265,18 @@ section#about .work li a {
 	text-decoration: none;
 	background: rgba(0,0,0,.75);
 	border-radius: 2px;
-	transition: all 0.1s ease-in;
-	-o-transition: all 0.1s ease-in;
-	-moz-transition: all 0.1s ease-in;
-	-webkit-transition: all 0.1s ease-in;
+	transition: all 0.05s ease-in;
+	-o-transition: all 0.05s ease-in;
+	-moz-transition: all 0.05s ease-in;
+	-webkit-transition: all 0.05s ease-in;
 }
 
 section#about .work li a:hover {
 	background: rgba(0,0,0,.5);
-	transition: all 0.1s ease-in;
-	-o-transition: all 0.1s ease-in;
-	-moz-transition: all 0.1s ease-in;
-	-webkit-transition: all 0.1s ease-in;
+	transition: all 0.05s ease-in;
+	-o-transition: all 0.05s ease-in;
+	-moz-transition: all 0.05s ease-in;
+	-webkit-transition: all 0.05s ease-in;
 }
 
 section#about .work li a h3 {
@@ -289,18 +289,18 @@ section#about .work li a h3 {
 section#about .work li a p {
 	font-size: 14px;
 	color: rgba(255,255,255,.75);
-	transition: all 0.1s ease-in;
-	-o-transition: all 0.1s ease-in;
-	-moz-transition: all 0.1s ease-in;
-	-webkit-transition: all 0.1s ease-in;
+	transition: all 0.05s ease-in;
+	-o-transition: all 0.05s ease-in;
+	-moz-transition: all 0.05s ease-in;
+	-webkit-transition: all 0.05s ease-in;
 }
 
 section#about .work li a:hover p {
 	color: #fff;
-	transition: all 0.1s ease-in;
-	-o-transition: all 0.1s ease-in;
-	-moz-transition: all 0.1s ease-in;
-	-webkit-transition: all 0.1s ease-in;
+	transition: all 0.05s ease-in;
+	-o-transition: all 0.05s ease-in;
+	-moz-transition: all 0.05s ease-in;
+	-webkit-transition: all 0.05s ease-in;
 }
 
 section#about .work li a .date {
@@ -321,10 +321,10 @@ section#about .recent-posts li a {
 	color: #999;
 	text-decoration: none;
 	border: 1px solid transparent;
-	transition: all 0.1s ease-in;
-	-o-transition: all 0.1s ease-in;
-	-moz-transition: all 0.1s ease-in;
-	-webkit-transition: all 0.1s ease-in;
+	transition: all 0.05s ease-in;
+	-o-transition: all 0.05s ease-in;
+	-moz-transition: all 0.05s ease-in;
+	-webkit-transition: all 0.05s ease-in;
 	padding-top: 20px;
 	padding-left: 40px;
 	padding-right: 40px;
@@ -335,10 +335,10 @@ section#about .recent-posts li a:hover {
 	background: #fff;
 	border: 1px solid #ddd;
 	border-radius: 2px;
-	transition: all 0.1s ease-in;
-	-o-transition: all 0.1s ease-in;
-	-moz-transition: all 0.1s ease-in;
-	-webkit-transition: all 0.1s ease-in;
+	transition: all 0.05s ease-in;
+	-o-transition: all 0.05s ease-in;
+	-moz-transition: all 0.05s ease-in;
+	-webkit-transition: all 0.05s ease-in;
 }
 
 section#about .recent-posts li h3 {
@@ -346,18 +346,18 @@ section#about .recent-posts li h3 {
 	font-size: 20px;
 	font-weight: 700;
 	color: #444;
-	transition: all 0.1s ease-in;
-	-o-transition: all 0.1s ease-in;
-	-moz-transition: all 0.1s ease-in;
-	-webkit-transition: all 0.1s ease-in;
+	transition: all 0.05s ease-in;
+	-o-transition: all 0.05s ease-in;
+	-moz-transition: all 0.05s ease-in;
+	-webkit-transition: all 0.05s ease-in;
 }
 
 section#about .recent-posts li a:hover h3 {
 	color: #111;
-	transition: all 0.1s ease-in;
-	-o-transition: all 0.1s ease-in;
-	-moz-transition: all 0.1s ease-in;
-	-webkit-transition: all 0.1s ease-in;
+	transition: all 0.05s ease-in;
+	-o-transition: all 0.05s ease-in;
+	-moz-transition: all 0.05s ease-in;
+	-webkit-transition: all 0.05s ease-in;
 }
 
 section#about .recent-posts li .date {
@@ -384,22 +384,53 @@ section#about .call-to-action a {
 	background: linear-gradient(#fff, #fbfbfb);
 	border: 1px solid #ddd;
 	border-radius: 2px;
-	transition: all 0.1s ease-in;
-	-o-transition: all 0.1s ease-in;
-	-moz-transition: all 0.1s ease-in;
-	-webkit-transition: all 0.1s ease-in;
+	transition: all 0.05s ease-in;
+	-o-transition: all 0.05s ease-in;
+	-moz-transition: all 0.05s ease-in;
+	-webkit-transition: all 0.05s ease-in;
 	padding-left: 20px;
 	padding-right: 20px;
+}
+
+section#about .call-to-action a:after {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(221, 221, 221, 0);
+	border-bottom-color: #ddd;
+	border-width: 8px;
+	margin-left: -8px;
 }
 
 section#about .call-to-action a:hover {
 	color: #111;
 	text-decoration: none;
 	border: 1px solid #111;
-	transition: all 0.1s ease-in;
-	-o-transition: all 0.1s ease-in;
-	-moz-transition: all 0.1s ease-in;
-	-webkit-transition: all 0.1s ease-in;
+	transition: all 0.05s ease-in;
+	-o-transition: all 0.05s ease-in;
+	-moz-transition: all 0.05s ease-in;
+	-webkit-transition: all 0.05s ease-in;
+}
+
+
+section#about .call-to-action a:hover:after {
+	bottom: 100%;
+	left: 50%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-color: rgba(221, 221, 221, 0);
+	border-bottom-color: #111;
+	border-width: 8px;
+	margin-left: -8px;
 }
 
 section#about .social {}
@@ -412,18 +443,18 @@ section#about .social li {
 
 section#about .social li a {
 	color: #999;
-	transition: all 0.1s ease-in;
-	-o-transition: all 0.1s ease-in;
-	-moz-transition: all 0.1s ease-in;
-	-webkit-transition: all 0.1s ease-in;
+	transition: all 0.05s ease-in;
+	-o-transition: all 0.05s ease-in;
+	-moz-transition: all 0.05s ease-in;
+	-webkit-transition: all 0.05s ease-in;
 }
 
 section#about .social li a:hover {
 	color: #111;
-	transition: all 0.1s ease-in;
-	-o-transition: all 0.1s ease-in;
-	-moz-transition: all 0.1s ease-in;
-	-webkit-transition: all 0.1s ease-in;
+	transition: all 0.05s ease-in;
+	-o-transition: all 0.05s ease-in;
+	-moz-transition: all 0.05s ease-in;
+	-webkit-transition: all 0.05s ease-in;
 }
 
 /* Post */
