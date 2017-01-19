@@ -33,6 +33,7 @@ get_header(); ?>
 
 							<h3><?php the_title(); ?></h3>
 							<p><?php echo get_the_content(); ?></p>
+							<div class="date"><?php echo get_the_time('F jS, Y'); ?></div>
 
 						</a>
 

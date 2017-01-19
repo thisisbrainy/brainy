@@ -283,12 +283,12 @@ section#about .work li a h3 {
 	font-size: 16px;
 	font-weight: 600;
 	color: #fff;
-	padding-top: 60px;
+	padding-top: 50px;
 }
 
 section#about .work li a p {
 	font-size: 14px;
-	color: rgba(255,255,255,.5);
+	color: rgba(255,255,255,.75);
 	transition: all 0.1s ease-in;
 	-o-transition: all 0.1s ease-in;
 	-moz-transition: all 0.1s ease-in;
@@ -301,6 +301,11 @@ section#about .work li a:hover p {
 	-o-transition: all 0.1s ease-in;
 	-moz-transition: all 0.1s ease-in;
 	-webkit-transition: all 0.1s ease-in;
+}
+
+section#about .work li a .date {
+	font-size: 12px;
+	color: rgba(255,255,255,.35);
 }
 
 section#about .recent-posts {
