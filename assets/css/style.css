@@ -333,6 +333,7 @@ section#about .recent-posts li a:hover {
 }
 
 section#about .recent-posts li h3 {
+	line-height: 1.25;
 	font-size: 20px;
 	font-weight: 700;
 	color: #444;
