@@ -316,20 +316,24 @@ section#about .recent-posts li {
 }
 
 section#about .recent-posts li a {
-	display: block;
-	width: 100%;
+	display: inline-block;
+	width: auto;
 	color: #999;
 	text-decoration: none;
+	border: 1px solid transparent;
 	transition: all 0.1s ease-in;
 	-o-transition: all 0.1s ease-in;
 	-moz-transition: all 0.1s ease-in;
 	-webkit-transition: all 0.1s ease-in;
 	padding-top: 20px;
+	padding-left: 40px;
+	padding-right: 40px;
 	padding-bottom: 20px;
 }
 
 section#about .recent-posts li a:hover {
-	background: #eee;
+	background: #fff;
+	border: 1px solid #ddd;
 	border-radius: 2px;
 	transition: all 0.1s ease-in;
 	-o-transition: all 0.1s ease-in;
