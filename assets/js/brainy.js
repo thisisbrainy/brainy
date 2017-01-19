@@ -1,14 +1,11 @@
-/* Search */
-document.getElementById('search-button').onclick = function() {
+/* Hyphenator */
+Hyphenator.config({
+	minwordlength: 2,
+	selectorfunction: function() {
 
-	if(document.getElementsByTagName('form')[0].getAttribute('class') === 'hidden') {
-
-		document.getElementsByTagName('form')[0].removeAttribute('class');
-
-	} else {
-
-		document.forms.search.submit();
+		return $('p').get();
 
 	}
+});
 
-};
+Hyphenator.run();
