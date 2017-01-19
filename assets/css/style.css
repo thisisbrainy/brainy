@@ -410,7 +410,7 @@ article#single-post .post-title {
 }
 
 article#single-post .post-title a {
-	font-size: 20px;
+	font-size: 24px;
 	font-weight: 700;
 	color: #444;
 	text-decoration: none;
@@ -421,7 +421,7 @@ article#single-post .post-title a:hover {
 }
 
 article#single-post .post-entry {
-	font-size: 15px;
+	font-size: 16px;
 	text-align: justify;
 }
 
@@ -453,18 +453,19 @@ article#single-post .post-entry hr {
 }
 
 article#single-post .post-meta {
-	width: calc(100% + 50px);
+	width: 300px;
 	height: 50px;
 	line-height: 50px;
 	font-family: 'Source Sans Pro';
 	font-size: 12px;
 	font-weight: 400;
+	color: #777;
 	text-align: center;
-	background: #fbfbfb;
 	border: 1px solid #ddd;
 	border-radius: 25px;
 	margin-top: 30px;
-	margin-left: -25px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 @media all and (max-width: 650px) {
