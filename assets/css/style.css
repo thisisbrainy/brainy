@@ -238,6 +238,18 @@ section#about .work li a {
 	text-decoration: none;
 	background: rgba(0,0,0,.75);
 	border-radius: 2px;
+	transition: all 0.1s ease-in;
+	-o-transition: all 0.1s ease-in;
+	-moz-transition: all 0.1s ease-in;
+	-webkit-transition: all 0.1s ease-in;
+}
+
+section#about .work li a:hover {
+	background: rgba(0,0,0,.5);
+	transition: all 0.1s ease-in;
+	-o-transition: all 0.1s ease-in;
+	-moz-transition: all 0.1s ease-in;
+	-webkit-transition: all 0.1s ease-in;
 }
 
 section#about .work li a h3 {
@@ -264,6 +276,10 @@ section#about .recent-posts li a {
 	width: 100%;
 	color: #999;
 	text-decoration: none;
+	transition: all 0.1s ease-in;
+	-o-transition: all 0.1s ease-in;
+	-moz-transition: all 0.1s ease-in;
+	-webkit-transition: all 0.1s ease-in;
 	padding-top: 20px;
 	padding-bottom: 20px;
 }
@@ -271,21 +287,33 @@ section#about .recent-posts li a {
 section#about .recent-posts li a:hover {
 	background: #eee;
 	border-radius: 2px;
+	transition: all 0.1s ease-in;
+	-o-transition: all 0.1s ease-in;
+	-moz-transition: all 0.1s ease-in;
+	-webkit-transition: all 0.1s ease-in;
 }
 
 section#about .recent-posts li h3 {
 	font-size: 20px;
 	font-weight: 700;
 	color: #444;
+	transition: all 0.1s ease-in;
+	-o-transition: all 0.1s ease-in;
+	-moz-transition: all 0.1s ease-in;
+	-webkit-transition: all 0.1s ease-in;
 }
 
 section#about .recent-posts li a:hover h3 {
 	color: #111;
+	transition: all 0.1s ease-in;
+	-o-transition: all 0.1s ease-in;
+	-moz-transition: all 0.1s ease-in;
+	-webkit-transition: all 0.1s ease-in;
 }
 
 section#about .recent-posts li .date {
 	font-size: 12px;
-	font-weight: 300;
+	font-weight: 500;
 	color: #999;
 	text-transform: uppercase;
 }
@@ -307,6 +335,10 @@ section#about .call-to-action a {
 	background: linear-gradient(#fff, #fbfbfb);
 	border: 1px solid #ddd;
 	border-radius: 2px;
+	transition: all 0.1s ease-in;
+	-o-transition: all 0.1s ease-in;
+	-moz-transition: all 0.1s ease-in;
+	-webkit-transition: all 0.1s ease-in;
 	padding-left: 20px;
 	padding-right: 20px;
 }
@@ -315,6 +347,10 @@ section#about .call-to-action a:hover {
 	color: #111;
 	text-decoration: none;
 	border: 1px solid #111;
+	transition: all 0.1s ease-in;
+	-o-transition: all 0.1s ease-in;
+	-moz-transition: all 0.1s ease-in;
+	-webkit-transition: all 0.1s ease-in;
 }
 
 section#about .social {}
@@ -327,10 +363,18 @@ section#about .social li {
 
 section#about .social li a {
 	color: #999;
+	transition: all 0.1s ease-in;
+	-o-transition: all 0.1s ease-in;
+	-moz-transition: all 0.1s ease-in;
+	-webkit-transition: all 0.1s ease-in;
 }
 
 section#about .social li a:hover {
 	color: #111;
+	transition: all 0.1s ease-in;
+	-o-transition: all 0.1s ease-in;
+	-moz-transition: all 0.1s ease-in;
+	-webkit-transition: all 0.1s ease-in;
 }
 
 /* Post */
