@@ -72,29 +72,29 @@ function the_archive() {
     /** Loop through each post for this month... */
     while($month_query->have_posts()) : $month_query->the_post();
 
-        /** Check the month/year of the current post */
-        $month_title = date('F Y', strtotime(get_the_date('Y-m-d H:i:s')));
+      /** Check the month/year of the current post */
+      $month_title = date('F Y', strtotime(get_the_date('Y-m-d H:i:s')));
 
-        /** Maybe output a human friendly date, if it's not already been output */
-        if(!in_array($month_title, $month_titles)) :
+      /** Maybe output a human friendly date, if it's not already been output */
+      if(!in_array($month_title, $month_titles)) :
 
-            if($close_ul) echo '</ul></div>';                                                             // Check if the unordered list of posts should be closed (it shouldn't for the first '$monthe_title')
-            echo '<h3 class="section-title">' . $month_title . '</h3>';   // Output the '$month_title'
-            echo '<div class="recent-posts"<ul>';                            // Open an unordered lists for the posts that are to come
-            $month_titles[] = $month_title;                                                         // Add this `$month_title' to the array of `$month_titles` so that it is not repeated
-            $close_ul = true;                                                                       // Indicate that the unordered list should be closed at the next oppurtunity
+        if($close_ul) echo '</ul></div>';                                                             // Check if the unordered list of posts should be closed (it shouldn't for the first '$monthe_title')
+        echo '<h3 class="section-title">' . $month_title . '</h3>';   // Output the '$month_title'
+        echo '<div class="recent-posts"<ul>';                            // Open an unordered lists for the posts that are to come
+        $month_titles[] = $month_title;                                                         // Add this `$month_title' to the array of `$month_titles` so that it is not repeated
+        $close_ul = true;                                                                       // Indicate that the unordered list should be closed at the next oppurtunity
 
-        endif;
+      endif;
 
-        /** Output each article for this month */
-        printf(
-            '<li id="monthly-post-%1$s"><a href="%3$s" title="%4$s"><h3>%2$s</h3><div class="date">%5$s</div></a></li>',
-            get_the_ID(),                               /** %1$s - The ID of the post */
-            get_the_title(),                            /** %2$s - The article title */
-            get_permalink(get_the_ID()),                /** %3$s - The article link */
-            the_title_attribute($title_attribute_args),  /** %4$s - The title for use as an attribute */
-						get_the_time('F jS, Y')
-        );
+      /** Output each article for this month */
+      printf(
+        '<li id="monthly-post-%1$s"><a href="%3$s" title="%4$s"><h3>%2$s</h3><div class="date">%5$s</div></a></li>',
+        get_the_ID(),                               /** %1$s - The ID of the post */
+        get_the_title(),                            /** %2$s - The article title */
+        get_permalink(get_the_ID()),                /** %3$s - The article link */
+        the_title_attribute($title_attribute_args),  /** %4$s - The title for use as an attribute */
+				get_the_time('F jS, Y')
+      );
 
     endwhile;
 

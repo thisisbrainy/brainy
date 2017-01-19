@@ -178,6 +178,79 @@ section#about h3.section-title:after {
 	margin-bottom: 20px;
 }
 
+section#about.what-i-do-section {
+	background: #eee;
+	padding-top: 40px;
+	padding-bottom: 50px;
+}
+
+section#about.what-i-do-section h3.section-title {
+	margin-top: 0;
+}
+
+section#about .what-i-do {
+	width: calc(100% + 200px);
+	margin-left: -100px;
+}
+
+@media all and (max-width: 1200px) {
+
+	section#about .what-i-do {
+		width: 100%;
+		margin-left: 0;
+	}
+
+}
+
+@media all and (max-width: 1000px) {
+
+	section#about .what-i-do {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+}
+
+section#about .what-i-do li {
+	display: block;
+	float: left;
+	width: calc(100% / 3 - 13.66666666666px);
+	vertical-align: top;
+	background: #fff;
+	box-shadow: 0px 0px 20px rgba(0,0,0,.15);
+	border-radius: 2px;
+	padding: 30px;
+	margin-right: 20px;
+}
+
+@media all and (max-width: 1000px) {
+
+	section#about .what-i-do li {
+		float: none;
+		width: 100%;
+		margin-right: 0;
+		margin-bottom: 20px;
+	}
+	
+}
+section#about .what-i-do li:hover {
+	box-shadow: 0px 0px 20px rgba(0,0,0,.25);
+}
+
+section#about .what-i-do li:last-child {
+	margin-right: 0;
+}
+
+section#about .what-i-do li h2 {
+	font-size: 16px;
+	color: #111;
+	margin-bottom: 10px;
+}
+
+section#about .what-i-do li p {
+	font-size: 14px;
+}
+
 section#about .work {}
 
 @media all and (max-width: 1000px) {

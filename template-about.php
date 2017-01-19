@@ -19,7 +19,59 @@ get_header(); ?>
 			<p>A one-man WordPress development shop.</</p>
 		</div>
 
-		<h3 class="section-title">Work</h3>
+	</section>
+
+</div>
+
+<section id="about" class="what-i-do-section">
+
+	<div class="container">
+
+		<h3 class="section-title">What I do</h3>
+
+		<div class="what-i-do">
+
+			<ul>
+
+				<li>
+
+					<h2>Ready-made websites</h2>
+
+					<p>Budget-friendly WordPress website on a ready-made theme from a top-notch designer which I will set up, secure and modify per your needs.</p>
+
+				</li>
+
+				<li>
+
+					<h2>Custom websites</h2>
+
+					<p>Be it making a raw design into an actual thing, a custom campaign website integrated with third-parties or a unique e-commerce solution, I'm up for it.</p>
+
+				</li>
+
+				<li>
+
+					<h2>Optimization</h2>
+
+					<p>Sometimes websites get slow. Sometimes they break entirely. I'll do my utmost best to make your website as fast as possible and unbreakable.</p>
+
+				</li>
+
+			</ul>
+
+			<div class="clear"></div>
+
+		</div> <!-- // what-i-do -->
+
+	</div>
+
+</section>
+
+<div class="container">
+
+	<section id="about">
+
+		<h3 class="section-title">What I've Done</h3>
 
 		<div class="work">
 

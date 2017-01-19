@@ -3,7 +3,7 @@ Hyphenator.config({
 	minwordlength: 2,
 	selectorfunction: function() {
 
-		return $('p').get();
+		return $('.post-entry p').get();
 
 	}
 });
