@@ -48,7 +48,7 @@ get_header(); ?>
 
 		<div class="call-to-action">
 
-			<a href="mailto:brainy@brainy.blog">You should hire me</a>
+			<a href="mailto:brainy@brainy.blog">Let's work together</a>
 
 		</div>
 
@@ -77,9 +77,9 @@ get_header(); ?>
 
 		</div> <!-- // recent posts -->
 
-		<div class="hidden call-to-action">
+		<div class="call-to-action">
 
-			<!-- <a href="<?php echo home_url('/blog'); ?>">There's more</a> -->
+			<a href="<?php echo home_url('/archive'); ?>">Archive</a>
 
 		</div>
 

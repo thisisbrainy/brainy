@@ -141,11 +141,11 @@ section#about .mast p {
 }
 
 section#about h3.section-title {
-	font-size: 13px;
-	font-weight: 600;
-	color: #777;
+	font-size: 12px;
+	font-weight: 400;
+	color: #888;
 	text-transform: uppercase;
-	letter-spacing: 3px;
+	letter-spacing: 4px;
 	margin-top: 60px;
 	margin-bottom: 20px;
 }
