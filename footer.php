@@ -10,7 +10,7 @@
 
 					<li><a target="_blank" href="https://twitter.com/thisisbrainy"><i class="fa fa-twitter"></i></a></li>
 					<li><a target="_blank" href="https://github.com/thisisbrainy"><i class="fa fa-github"></i></a></li>
-					<li><a target="_blank" href="https://wordpress.org/thisisbrainy"><i class="fa fa-wordpress"></i></a></li>
+					<li><a target="_blank" href="https://profiles.wordpress.org/thisisbrainy"><i class="fa fa-wordpress"></i></a></li>
 					<li><a target="_blank" href="mailto:brainy@brainy.blog"><i class="fa fa-envelope"></i></a></li>
 
 				</ul>
