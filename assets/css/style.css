@@ -137,7 +137,7 @@ section#about .mast h2 {
 	section#about .mast h2 {
 		font-size: 21px;
 	}
-	
+
 }
 
 section#about .mast p {
@@ -432,6 +432,7 @@ section#post {
 
 article#single-post {}
 article#single-post .post-title {
+	line-height: 1.25;
 	text-align: center;
 	margin-bottom: 20px;
 }
