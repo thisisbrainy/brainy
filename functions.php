@@ -14,4 +14,12 @@ the_asset('css', 'style.css', true);
 the_asset('js', 'brainy.js', true);
 
 /* Variables */
-$work = the_work();
+$work = new WP_Query([
+	'post_type' => 'bcpt_work',
+	'posts_per_page' => 12
+]);
+
+$blog = new WP_Query([
+	'post_type' => 'post',
+	'posts_per_page' => 10
+]);

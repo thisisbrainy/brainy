@@ -27,12 +27,3 @@ function the_asset($type, $filename, $cache = false) {
 	});
 
 }
-
-function the_work() {
-
-	return new WP_Query([
-		'post_type' => 'bcpt_work',
-		'posts_per_page' => 999
-	]);
-	
-}

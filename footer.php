@@ -1,4 +1,26 @@
+	<section id="about">
 
+		<div class="container">
+
+			<h3 class="section-title">Me, elsewhere</h3>
+
+			<div class="social">
+
+				<ul>
+
+					<li><a href="https://twitter.com/thisisbrainy"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="https://github.com/thisisbrainy"><i class="fa fa-github"></i></a></li>
+					<li><a href="https://wordpress.org/thisisbrainy"><i class="fa fa-wordpress"></i></a></li>
+					<li><a href="mailto:brainy@brainy.blog"><i class="fa fa-envelope"></i></a></li>
+
+				</ul>
+
+			</div> <!-- // social -->
+
+		</div>
+
+	</section>
+	
 	<?php wp_footer(); ?>
 
 	<script>
