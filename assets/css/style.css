@@ -262,6 +262,18 @@ section#about .work li a h3 {
 section#about .work li a p {
 	font-size: 14px;
 	color: #888;
+	transition: all 0.1s ease-in;
+	-o-transition: all 0.1s ease-in;
+	-moz-transition: all 0.1s ease-in;
+	-webkit-transition: all 0.1s ease-in;
+}
+
+section#about .work li a:hover p {
+	color: #fff;
+	transition: all 0.1s ease-in;
+	-o-transition: all 0.1s ease-in;
+	-moz-transition: all 0.1s ease-in;
+	-webkit-transition: all 0.1s ease-in;
 }
 
 section#about .recent-posts {
