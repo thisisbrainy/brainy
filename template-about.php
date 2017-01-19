@@ -53,7 +53,7 @@ get_header(); ?>
 
 					<h2>Optimization</h2>
 
-					<p>Sometimes websites get slow. Sometimes they break entirely. I'll do my utmost best to make your website as fast as possible and unbreakable.</p>
+					<p>Sometimes websites get slow. Sometimes they break entirely. I'll do my utmost best to make your website as fast and unbreakable as possible.</p>
 
 				</li>
 
