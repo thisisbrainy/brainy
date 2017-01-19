@@ -15,10 +15,10 @@ the_asset('css', 'style.css', true);
 /* Variables */
 $work = new WP_Query([
 	'post_type' => 'bcpt_work',
-	'posts_per_page' => 12
+	'posts_per_page' => 6
 ]);
 
 $blog = new WP_Query([
 	'post_type' => 'post',
-	'posts_per_page' => 10
+	'posts_per_page' => 6
 ]);
