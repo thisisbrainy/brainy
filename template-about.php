@@ -105,6 +105,14 @@ get_header(); ?>
 
 		</div>
 
+	</section>
+
+</div>
+
+<section id="about" class="blog-section">
+
+	<div class="container">
+
 		<h3 class="section-title">Blog</h3>
 
 		<div class="recent-posts">
@@ -136,8 +144,8 @@ get_header(); ?>
 
 		</div>
 
-	</section>
+	</div>
 
-</div>
+</section>
 
 <?php get_footer();

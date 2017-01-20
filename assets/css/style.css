@@ -180,8 +180,8 @@ section#about h3.section-title:after {
 
 section#about.what-i-do-section {
 	background: #eee;
-	padding-top: 40px;
-	padding-bottom: 50px;
+	padding-top: 80px;
+	padding-bottom: 90px;
 }
 
 section#about.what-i-do-section h3.section-title {
@@ -231,7 +231,7 @@ section#about .what-i-do li {
 		margin-right: 0;
 		margin-bottom: 20px;
 	}
-	
+
 }
 section#about .what-i-do li:hover {
 	box-shadow: 0px 0px 20px rgba(0,0,0,.25);
@@ -382,11 +382,21 @@ section#about .work li a .date {
 	color: rgba(255,255,255,.35);
 }
 
+section#about.blog-section {
+	background: #eee;
+	padding-bottom: 10px;
+}
+
 section#about .recent-posts {
 }
 
 section#about .recent-posts li {
 	width: 100%;
+	border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+section#about .recent-posts li:last-child {
+	border-bottom: 0;
 }
 
 section#about .recent-posts li a {
@@ -394,7 +404,6 @@ section#about .recent-posts li a {
 	width: auto;
 	color: #999;
 	text-decoration: none;
-	border: 1px solid transparent;
 	transition: all 0.05s ease-in;
 	-o-transition: all 0.05s ease-in;
 	-moz-transition: all 0.05s ease-in;
@@ -406,9 +415,6 @@ section#about .recent-posts li a {
 }
 
 section#about .recent-posts li a:hover {
-	background: #fff;
-	border: 1px solid #ddd;
-	border-radius: 2px;
 	transition: all 0.05s ease-in;
 	-o-transition: all 0.05s ease-in;
 	-moz-transition: all 0.05s ease-in;
@@ -452,11 +458,12 @@ section#about .call-to-action a {
 	line-height: 38px;
 	font-size: 12px;
 	font-weight: 500;
-	color: #666;
+	color: #fff;
 	text-transform: uppercase;
 	letter-spacing: 1px;
-	background: linear-gradient(#fff, #fbfbfb);
-	border: 1px solid #ddd;
+	background: #111;
+	box-shadow: 0px 0px 20px rgba(0,0,0,.15);
+	border: 1px solid transparent;
 	border-radius: 2px;
 	transition: all 0.05s ease-in;
 	-o-transition: all 0.05s ease-in;
@@ -466,48 +473,21 @@ section#about .call-to-action a {
 	padding-right: 20px;
 }
 
-section#about .call-to-action a:after {
-	bottom: 100%;
-	left: 50%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-color: rgba(221, 221, 221, 0);
-	border-bottom-color: #ddd;
-	border-width: 8px;
-	margin-left: -8px;
-}
-
 section#about .call-to-action a:hover {
 	color: #111;
 	text-decoration: none;
-	border: 1px solid #111;
+	background: #fff;
+	border: 1px solid rgba(0,0,0,.25);
 	transition: all 0.05s ease-in;
 	-o-transition: all 0.05s ease-in;
 	-moz-transition: all 0.05s ease-in;
 	-webkit-transition: all 0.05s ease-in;
 }
 
-
-section#about .call-to-action a:hover:after {
-	bottom: 100%;
-	left: 50%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-color: rgba(221, 221, 221, 0);
-	border-bottom-color: #111;
-	border-width: 8px;
-	margin-left: -8px;
+section#about .social {
+	padding-bottom: 40px;
 }
 
-section#about .social {}
 section#about .social li {
 	display: inline-block;
 	font-size: 22px;
