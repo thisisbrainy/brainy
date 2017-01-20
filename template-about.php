@@ -16,7 +16,7 @@ get_header(); ?>
 
 		<div class="mast">
 			<h2>Hi! This is Brainy.</h2>
-			<p>A one-man WordPress development shop.</</p>
+			<p>A two-man WordPress development shop.</</p>
 		</div>
 
 	</section>
@@ -27,7 +27,7 @@ get_header(); ?>
 
 	<div class="container">
 
-		<h3 class="section-title">What I do</h3>
+		<h3 class="section-title">What we do</h3>
 
 		<div class="what-i-do">
 
@@ -37,7 +37,7 @@ get_header(); ?>
 
 					<h2>Ready-made websites</h2>
 
-					<p>Budget-friendly WordPress website on a ready-made theme from a top-notch designer which I will set up, secure and modify per your needs.</p>
+					<p>Budget-friendly WordPress website on a ready-made theme from a top-notch designer which we will set up, secure and modify per your needs.</p>
 
 				</li>
 
@@ -45,7 +45,7 @@ get_header(); ?>
 
 					<h2>Custom websites</h2>
 
-					<p>Be it making a raw design into an actual thing, a custom campaign website integrated with third-parties or a unique e-commerce solution, I'm up for it.</p>
+					<p>Be it making a raw design into an actual thing, a custom campaign website integrated with third-parties or a unique e-commerce solution, We're up for it.</p>
 
 				</li>
 
@@ -53,7 +53,7 @@ get_header(); ?>
 
 					<h2>Optimization</h2>
 
-					<p>Sometimes websites get slow. Sometimes they break entirely. I'll do my utmost best to make your website as fast and unbreakable as possible.</p>
+					<p>Sometimes websites get slow. Sometimes they break entirely. We'll do our utmost best to make your website as fast and unbreakable as possible.</p>
 
 				</li>
 
@@ -71,7 +71,7 @@ get_header(); ?>
 
 	<section id="about">
 
-		<h3 class="section-title">What I've Done</h3>
+		<h3 class="section-title">What we've done</h3>
 
 		<div class="work">
 
