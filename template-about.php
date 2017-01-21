@@ -16,7 +16,7 @@ get_header(); ?>
 
 		<div class="mast">
 			<h2>Hi! This is Brainy.</h2>
-			<p>A two-man WordPress development shop.</</p>
+			<p>A WordPress development shop.</</p>
 		</div>
 
 	</section>
@@ -27,7 +27,7 @@ get_header(); ?>
 
 	<div class="container">
 
-		<h3 class="section-title">What we do</h3>
+		<h3 class="section-title">Competence</h3>
 
 		<div class="what-i-do">
 
@@ -35,17 +35,17 @@ get_header(); ?>
 
 				<li>
 
-					<h2>Ready-made websites</h2>
+					<h2>Ready-made WordPress solutions</h2>
 
-					<p>Budget-friendly WordPress website on a ready-made theme from a top-notch designer which we will set up, secure and modify per your needs.</p>
+					<p>Budget-friendly WordPress website on a ready-made theme from any respectable designer on <a href="https://themeforest.net/category/wordpress" target="_blanl">Themeforest</a>, fully set-up, secure and modified as per your needs.</p>
 
 				</li>
 
 				<li>
 
-					<h2>Custom websites</h2>
+					<h2>Custom WordPress solutions</h2>
 
-					<p>Be it making a raw design into an actual thing, a custom campaign website integrated with third-parties or a unique e-commerce solution, We're up for it.</p>
+					<p>Be it transforming a raw design into a a pixel-perfect actual thing, a custom campaign website integrated with third-parties or a unique e-commerce solution.</p>
 
 				</li>
 
@@ -53,7 +53,7 @@ get_header(); ?>
 
 					<h2>Optimization</h2>
 
-					<p>Sometimes websites get slow. Sometimes they break entirely. We'll do our utmost best to make your website as fast and unbreakable as possible.</p>
+					<p>Age shows no mercy on anyone. Not even websites. What is slow, mobile-<em>un</em>friendly or perhaps broken entirely gets fast, responsive and fixed.</p>
 
 				</li>
 
@@ -71,7 +71,7 @@ get_header(); ?>
 
 	<section id="about">
 
-		<h3 class="section-title">What we've done</h3>
+		<h3 class="section-title">Work</h3>
 
 		<div class="work">
 

@@ -2,7 +2,7 @@
 
 		<div class="container">
 
-			<h3 class="section-title">Me, elsewhere</h3>
+			<h3 class="section-title">Elsewhere</h3>
 
 			<div class="social">
 
