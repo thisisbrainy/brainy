@@ -78,20 +78,43 @@ a:hover
 /* Header */
 #header
 	display: block
-	background: #eee
+	text-align: center
+	background: url(../images/header.jpg) no-repeat #111
+	background-size: cover
+	overflow: hidden
 	padding-top: 80px
 	padding-bottom: 80px
+
+body.home #header
+	padding-top: 150px
+	padding-bottom: 150px
+
+#header:before
+	display: block
+	width: 100%
+	height: 100%
+	min-height: 500px
+	content: ''
+	background: rgba(17,17,17,.8)
+	position: absolute
+	top: 0
+	left: 0
 
 @media all and (max-width: 650px)
 
 	#header
-		padding-top: 0px
+		padding-top: 40px
+		padding-bottom: 40px
+
+	body.home #header
+		padding-top: 40px
+		padding-bottom: 40px
 
 #header .logo
 	display: block
 	width: 40px
 	height: 40px
-	background: url(../images/logo.png) no-repeat
+	background: url(../images/logo_transparent.png) no-repeat
 	background-size: cover
 	border-radius: 100%
 	margin-left: auto
@@ -101,6 +124,30 @@ a:hover
 	display: block
 	width: 40px
 	height: 40px
+
+#header .mast h2
+	font-size: 24px
+	font-weight: 700
+	color: #fff
+	margin: 0
+	margin-top: 20px
+
+@media all and (max-width: 650px)
+
+	#header .mast h2
+		font-size: 21px
+
+#header .mast p
+	font-size: 20px
+	font-weight: 300
+	color: #fff
+	margin: 0
+	margin-top: -5px
+
+@media all and (max-width: 650px)
+
+	#header .mast p
+		font-size: 16px
 
 /* About */
 #about
@@ -143,45 +190,8 @@ a:hover
 	-moz-transition: all 0.05s ease-in
 	-webkit-transition: all 0.05s ease-in
 
-/* Introduction */
-#about.mast-section
-	background: #eee
-	padding-bottom: 80px
-
-#about .mast
-	width: 100%
-	text-align: center
-	margin-top: -80px
-
-@media all and (max-width: 650px)
-
-	#about .mast
-		margin-bottom: 20px
-
-#about .mast h2
-	font-size: 24px
-	font-weight: 700
-	color: #111
-	margin: 0
-
-@media all and (max-width: 650px)
-
-	#about .mast h2
-		font-size: 21px
-
-#about .mast p
-	font-size: 20px
-	font-weight: 300
-	color: #555
-	margin: 0
-	margin-top: -5px
-
-@media all and (max-width: 650px)
-
-	#about .mast p
-		font-size: 16px
-
 #about h3.section-title
+	line-height: 1
 	font-size: 12px
 	font-weight: 700
 	color: #999
@@ -208,8 +218,8 @@ a:hover
 @media all and (max-width: 650px)
 
 	#about.what-i-do-section
-		padding-top: 20px
-		padding-bottom: 1px
+		padding-top: 40px
+		padding-bottom: 20px
 
 #about.what-i-do-section h3.section-title
 	margin-top: 0
@@ -453,7 +463,8 @@ a:hover
 
 /* Post */
 #post
-	margin-top: 40px
+	margin-top: 80px
+	margin-bottom: 80px
 
 @media all and (max-width: 690px)
 

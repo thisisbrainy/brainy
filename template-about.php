@@ -10,19 +10,6 @@
 
 get_header(); ?>
 
-<section id="about" class="mast-section">
-
-	<div class="container">
-
-		<div class="mast">
-			<h2>Hi! This is Brainy.</h2>
-			<p>A WordPress development shop.</</p>
-		</div>
-
-	</div>
-
-</section>
-
 <section id="about" class="what-i-do-section">
 
 	<div class="container">

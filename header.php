@@ -13,4 +13,11 @@
 			<a href="<?php echo home_url('/'); ?>"></a>
 		</div>
 
+		<?php if(is_front_page()): ?>
+		<div class="mast">
+			<h2>Hi! This is Brainy.</h2>
+			<p>A WordPress development shop.</p>
+		</div>
+		<?php endif; ?>
+
 	</header>
