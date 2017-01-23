@@ -13,6 +13,7 @@ the_asset('css', 'reset.css', true);
 the_asset('css', 'style.css', true);
 the_asset('js', 'jquery.js', true);
 the_asset('js', 'hyphenator.js', true);
+the_asset('js', 'particles.js', true);
 the_asset('js', 'brainy.js', true);
 
 /* Variables */

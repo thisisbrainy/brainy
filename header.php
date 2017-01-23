@@ -9,6 +9,12 @@
 
 	<header id="header">
 
+		<div class="particles-container">
+
+			<div id="particles"></div>
+
+		</div>
+
 		<div class="logo">
 			<a href="<?php echo home_url('/'); ?>"></a>
 		</div>

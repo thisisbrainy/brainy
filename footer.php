@@ -21,6 +21,7 @@
 
 	</section>
 
+	<script>var js_location = '<?php bloginfo('template_directory'); ?>/assets/js';</script>
 	<?php wp_footer(); ?>
 
 	<script>
