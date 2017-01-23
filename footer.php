@@ -1,4 +1,4 @@
-	<section id="about">
+	<section id="about" class="social-section">
 
 		<div class="container">
 

@@ -10,8 +10,12 @@ body
 	line-height: 1.75
 	background: #fff
 	overflow-x: hidden
-	padding-top: 40px
-	padding-bottom: 40px
+
+@media all and (max-width: 650px)
+
+	body
+		padding-top: 20px
+		padding-bottom: 20px
 
 input,
 textarea,
@@ -74,7 +78,14 @@ a:hover
 /* Header */
 #header
 	display: block
-	padding-top: 40px
+	background: #eee
+	padding-top: 80px
+	padding-bottom: 80px
+
+@media all and (max-width: 650px)
+
+	#header
+		padding-top: 0px
 
 #header .logo
 	display: block
@@ -88,8 +99,8 @@ a:hover
 
 #header .logo a
 	display: block
-	width: 50px
-	height: 50px
+	width: 40px
+	height: 40px
 
 /* About */
 #about
@@ -100,7 +111,7 @@ a:hover
 
 #about .call-to-action
 	margin-top: 20px
-	margin-bottom: 100px
+	margin-bottom: 80px
 
 #about .call-to-action a
 	display: inline-block
@@ -133,10 +144,19 @@ a:hover
 	-webkit-transition: all 0.05s ease-in
 
 /* Introduction */
+#about.mast-section
+	background: #eee
+	padding-bottom: 80px
+
 #about .mast
 	width: 100%
 	text-align: center
-	margin-bottom: 80px
+	margin-top: -80px
+
+@media all and (max-width: 650px)
+
+	#about .mast
+		margin-bottom: 20px
 
 #about .mast h2
 	font-size: 24px
@@ -167,7 +187,7 @@ a:hover
 	color: #999
 	text-transform: uppercase
 	letter-spacing: 4px
-	margin-top: 60px
+	margin-top: 40px
 	margin-bottom: 20px
 
 #about h3.section-title:after
@@ -182,9 +202,14 @@ a:hover
 
 /* What I Do */
 #about.what-i-do-section
-	background: #eee
-	padding-top: 80px
-	padding-bottom: 90px
+	padding-top: 70px
+	padding-bottom: 80px
+
+@media all and (max-width: 650px)
+
+	#about.what-i-do-section
+		padding-top: 20px
+		padding-bottom: 1px
 
 #about.what-i-do-section h3.section-title
 	margin-top: 0
@@ -210,8 +235,8 @@ a:hover
 	float: left
 	width: calc(100% / 3 - 13.66666666666px)
 	vertical-align: top
-	background: rgba(255,255,255,.85)
-	box-shadow: 0px 0px 20px rgba(0,0,0,.15)
+	background: #fff
+	border: 1px solid #ddd
 	border-radius: 2px
 	padding: 30px
 	margin-right: 20px
@@ -235,6 +260,10 @@ a:hover
 
 #about .what-i-do li p
 	font-size: 14px
+
+#about.work-section
+	background: #eee
+	padding-bottom: 1px
 
 @media all and (max-width: 1000px)
 
@@ -341,7 +370,6 @@ a:hover
 
 /* Front page blog */
 #about.blog-section
-	background: #eee
 	padding-bottom: 10px
 
 #about .recent-posts
@@ -397,6 +425,9 @@ a:hover
 	text-transform: uppercase
 
 /* Social footer */
+#about.social-section
+	background: #eee
+
 #about .social
 	padding-bottom: 40px
 

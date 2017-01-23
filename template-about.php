@@ -10,18 +10,18 @@
 
 get_header(); ?>
 
-<div class="container">
+<section id="about" class="mast-section">
 
-	<section id="about">
+	<div class="container">
 
 		<div class="mast">
 			<h2>Hi! This is Brainy.</h2>
 			<p>A WordPress development shop.</</p>
 		</div>
 
-	</section>
+	</div>
 
-</div>
+</section>
 
 <section id="about" class="what-i-do-section">
 
@@ -67,9 +67,9 @@ get_header(); ?>
 
 </section>
 
-<div class="container">
+<section id="about" class="work-section">
 
-	<section id="about">
+	<div class="container">
 
 		<h3 class="section-title">Work</h3>
 
@@ -105,9 +105,9 @@ get_header(); ?>
 
 		</div>
 
-	</section>
+	</div>
 
-</div>
+</section>
 
 <section id="about" class="blog-section">
 
