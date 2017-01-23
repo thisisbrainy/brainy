@@ -48,6 +48,12 @@ get_header(); ?>
 
 			<div class="clear"></div>
 
+			<div class="call-to-action">
+
+				<a href="mailto:brainy@brainy.blog">Let's work together</a>
+
+			</div>
+
 		</div> <!-- // what-i-do -->
 
 	</div>
