@@ -12,7 +12,7 @@ get_header(); ?>
 
 <div class="container post">
 
-	<section id="about">
+	<section id="about" class="archive-section">
 
 		<?php the_archive(); ?>
 
