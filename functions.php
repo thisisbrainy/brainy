@@ -24,5 +24,5 @@ $work = new WP_Query([
 
 $blog = new WP_Query([
 	'post_type' => 'post',
-	'posts_per_page' => 8
+	'posts_per_page' => 5
 ]);
