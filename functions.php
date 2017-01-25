@@ -8,14 +8,13 @@ require_once __DIR__ . '/includes/actions.php';
 require_once __DIR__ . '/includes/functions.php';
 
 /* Assets */
-the_asset('css', 'font-awesome.css', true);
-the_asset('css', 'overall.css', true);
-the_asset('css', 'header.css', true);
-the_asset('css', 'style.css', true);
-the_asset('js', 'jquery.js', true);
-the_asset('js', 'hyphenator.js', true);
-the_asset('js', 'particles.js', true);
-the_asset('js', 'brainy.js', true);
+the_asset('css', 'font-awesome.css');
+the_asset('css', 'overall.css');
+the_asset('css', 'header.css');
+the_asset('css', 'style.css');
+the_asset('js', 'jquery.js');
+the_asset('js', 'particles.js');
+the_asset('js', 'brainy.js');
 
 /* Variables */
 $work = new WP_Query([

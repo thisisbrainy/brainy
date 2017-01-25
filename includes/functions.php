@@ -1,16 +1,10 @@
 <?php
 
-function the_asset($type, $filename, $cache = false) {
+function the_asset($type, $filename) {
 
 	add_action('wp_enqueue_scripts', function() use($type, $filename, $cache) {
 
 		$version = time();
-
-		if($cache) {
-
-			$version = false;
-
-		}
 
 		if($type === 'css') {
 
