@@ -9,7 +9,8 @@ require_once __DIR__ . '/includes/functions.php';
 
 /* Assets */
 the_asset('css', 'font-awesome.css', true);
-the_asset('css', 'reset.css', true);
+the_asset('css', 'overall.css', true);
+the_asset('css', 'header.css', true);
 the_asset('css', 'style.css', true);
 the_asset('js', 'jquery.js', true);
 the_asset('js', 'hyphenator.js', true);

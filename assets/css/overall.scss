@@ -1,0 +1,106 @@
+@import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i'";
+
+/* Reset */
+* {
+	box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	position: relative;
+	padding: 0;
+	margin: 0;
+}
+
+li {
+	list-style: none;
+}
+
+img {
+	border: 0;
+}
+
+/* Overall */
+body {
+	font-family: 'Source Sans Pro', Arial, Sans-Serif;
+	font-size: 16px;
+	color: #555;
+	line-height: 1.75;
+	background: #fff;
+	overflow-x: hidden;
+}
+
+input,
+textarea,
+select {
+	font-family: 'Source Sans Pro', Sans-Serif, Arial;
+	font-size: 14px;
+	color: #555;
+}
+
+label {
+	font-family: 'Source Sans Pro', Sans-Serif, Arial;
+	font-size: 11px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: #999;
+	letter-spacing: 2px;
+}
+
+i {
+	font-size: 14px;
+}
+
+a {
+	color: #4e8ae2;
+	text-decoration: none;
+
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+.screen-reader-text {
+	display: none;
+}
+
+.clear {
+	clear: both;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.hidden {
+	display: none !important;
+}
+
+.container {
+	width: 1000px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+@media all and (max-width: 1000px) {
+
+	.container {
+		width: 100%;
+	}
+
+}
+
+.container.post {
+	width: 810px;
+}
+
+@media all and (max-width: 810px) {
+
+	.container.post {
+		width: 100%;
+	}
+
+}
