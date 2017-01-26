@@ -1,4 +1,5 @@
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i,600,600i,700,700i'";
+@import 'mixins';
 
 /* Reset */
 * {
@@ -53,9 +54,11 @@ i {
 a {
 	color: #4e8ae2;
 	text-decoration: none;
+	@include animate();
 
 	&:hover {
 		text-decoration: underline;
+		@include animate();
 	}
 }
 
@@ -103,4 +106,57 @@ a {
 		width: 100%;
 	}
 
+}
+
+.call-to-action {
+	margin-top: 40px;
+
+	a {
+		display: inline-block;
+		height: 40px;
+		line-height: 38px;
+		font-size: 12px;
+		font-weight: 500;
+		color: #fff;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+		background: #111;
+		box-shadow: 0px 0px 20px rgba(0,0,0,.15);
+		border: 1px solid transparent;
+		border-radius: 2px;
+		@include animate();
+		padding-left: 20px;
+		padding-right: 20px;
+
+		&:hover {
+			color: #111;
+			text-decoration: none;
+			background: #fff;
+			border: 1px solid rgba(0,0,0,.25);
+			@include animate();
+		}
+	}
+}
+
+.section-title {
+	line-height: 1;
+	font-size: 12px;
+	font-weight: 700;
+	color: #999;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 4px;
+	margin-top: 40px;
+	margin-bottom: 20px;
+
+	&:after {
+		display: block;
+		width: 100px;
+		content: '';
+		border-bottom: 1px solid #ddd;
+		margin-top: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		margin-bottom: 20px;
+	}
 }

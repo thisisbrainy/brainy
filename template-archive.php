@@ -10,14 +10,14 @@
 
 get_header(); ?>
 
-<div class="container post">
+<section id="recent-posts" class="archive">
 
-	<section id="about" class="archive-section">
+	<div class="container">
 
 		<?php the_archive(); ?>
 
-	</section>
+	</div>
 
-</div>
+</section>
 
 <?php get_footer();

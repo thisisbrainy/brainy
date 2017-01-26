@@ -1,0 +1,42 @@
+@import 'mixins';
+
+#footer {
+	display: block;
+	width: 100%;
+	text-align: center;
+	background: #eee;
+	padding-top: 40px;
+	padding-bottom: 70px;
+
+	@media all and (max-width: 650px) {
+		#footer {
+			padding-top: 40px;
+			padding-bottom: 40px;
+
+			.section-title {
+				margin-top: 0;
+			}
+		}
+	}
+
+	li {
+		display: inline-block;
+		font-size: 22px;
+		margin-left: 10px;
+		margin-right: 10px;
+
+		a {
+			color: #999;
+			@include animate();
+
+			&:hover {
+				color: #111;
+				@include animate();
+			}
+		}
+	}
+}
+
+body.single-post #footer {
+	padding-top: 40px;
+}

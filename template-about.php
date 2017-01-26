@@ -10,13 +10,13 @@
 
 get_header(); ?>
 
-<section id="about" class="what-i-do-section">
+<section id="competence">
 
 	<div class="container">
 
 		<h3 class="section-title">Competence</h3>
 
-		<div class="what-i-do">
+		<div class="competence">
 
 			<ul>
 
@@ -60,7 +60,7 @@ get_header(); ?>
 
 </section>
 
-<section id="about" class="work-section">
+<section id="work">
 
 	<div class="container">
 
@@ -102,7 +102,7 @@ get_header(); ?>
 
 </section>
 
-<section id="about" class="blog-section">
+<section id="recent-posts">
 
 	<div class="container">
 

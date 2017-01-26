@@ -1,0 +1,6 @@
+@mixin animate() {
+	transition: all 0.05s ease-in;
+	-o-transition: all 0.05s ease-in;
+	-moz-transition: all 0.05s ease-in;
+	-webkit-transition: all 0.05s ease-in;
+}

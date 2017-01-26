@@ -9,8 +9,6 @@ require_once __DIR__ . '/includes/functions.php';
 
 /* Assets */
 the_asset('css', 'font-awesome.css');
-the_asset('css', 'overall.css');
-the_asset('css', 'header.css');
 the_asset('css', 'style.css');
 the_asset('js', 'jquery.js');
 the_asset('js', 'particles.js');
