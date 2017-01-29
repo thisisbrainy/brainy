@@ -10,56 +10,6 @@
 
 get_header(); ?>
 
-<section id="competence">
-
-	<div class="container">
-
-		<h3 class="section-title">Competence</h3>
-
-		<div class="competence">
-
-			<ul>
-
-				<li>
-
-					<h2>Ready-made WordPress solutions</h2>
-
-					<p>Budget-friendly WordPress website on a ready-made theme from any respectable designer on <a href="https://themeforest.net/category/wordpress" target="_blanl">Themeforest</a>, fully set-up, secure and modified as per your needs.</p>
-
-				</li>
-
-				<li>
-
-					<h2>Custom WordPress solutions</h2>
-
-					<p>Be it transforming a raw design into a a pixel-perfect actual thing, a custom campaign website integrated with third-parties or a unique e-commerce solution.</p>
-
-				</li>
-
-				<li>
-
-					<h2>Optimization</h2>
-
-					<p>Age shows no mercy on anyone. Not even websites. What is slow, mobile-<em>un</em>friendly or perhaps broken entirely gets fast, responsive and fixed.</p>
-
-				</li>
-
-			</ul>
-
-			<div class="clear"></div>
-
-			<div class="call-to-action">
-
-				<a href="mailto:brainy@brainy.blog">Let's work together</a>
-
-			</div>
-
-		</div> <!-- // what-i-do -->
-
-	</div>
-
-</section>
-
 <section id="work">
 
 	<div class="container">

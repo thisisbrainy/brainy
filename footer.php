@@ -6,7 +6,7 @@
 
 			<ul>
 
-				<li><a target="_blank" href="https://twitter.com/thisisbrainy"><i class="fa fa-twitter"></i></a></li>
+				<li><a target="_blank" href="https://facebook.com/gobrainy"><i class="fa fa-facebook-square"></i></a></li>
 				<li><a target="_blank" href="https://github.com/thisisbrainy"><i class="fa fa-github"></i></a></li>
 				<li><a target="_blank" href="https://profiles.wordpress.org/thisisbrainy"><i class="fa fa-wordpress"></i></a></li>
 				<li><a href="skype:live:brainy_30?userinfo"><i class="fa fa-skype"></i></a></li>
