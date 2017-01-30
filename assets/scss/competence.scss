@@ -15,6 +15,8 @@
 	}
 
 	.competence {
+		width: calc(100% + 200px);
+		margin-left: -100px;
 
 		@media all and (max-width: 1200px) {
 			width: 100%;
@@ -29,12 +31,13 @@
 		li {
 			display: block;
 			float: left;
-			width: calc(100% / 4 - 20px);
-			height: 200px;
+			width: calc(100% / 3 - 13.66666666666px);
 			vertical-align: top;
-			padding: 40px;
+			background: #fff;
+			border: 1px solid #ddd;
+			border-radius: 2px;
+			padding: 30px;
 			margin-right: 20px;
-			margin-bottom: 20px;
 
 			@media all and (max-width: 1000px) {
 				float: none;
@@ -43,16 +46,15 @@
 				margin-bottom: 20px;
 			}
 
-			&:nth-child(2n) {
+			&:last-child {
 				margin-right: 0;
 			}
 
 			h2 {
 				line-height: 1.15;
-				font-size: 18px;
-				font-weight: 600;
+				font-size: 16px;
 				color: #111;
-				margin-bottom: 20px;
+				margin-bottom: 10px;
 			}
 
 			p {
